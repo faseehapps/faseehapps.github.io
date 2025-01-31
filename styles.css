@@ -55,7 +55,7 @@ h1, h2, h3, h4, p {
     border-radius: 0px;
     padding: 8px;
     margin: 16px;
-    transition: color 0.3s ease ,background-color 0.3s ease, border 0.3s ease, box-shadow 0.3s ease;
+    transition: color 0.3s ease ,background-color 0.3s ease, border 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
 }
 
 .theme-toggle-btn:hover {
@@ -63,7 +63,8 @@ h1, h2, h3, h4, p {
     color: var(--background);
     background-color: var(--primary);
     border: 1px solid transparent;
-    box-shadow: 0px 0px 20px var(--primary);
+    transform: translateY(-4px);
+    box-shadow: 10px 10px 0px var(--shadow);
 }
 
 .items-container {
