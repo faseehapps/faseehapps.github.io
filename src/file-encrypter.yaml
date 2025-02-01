@@ -2,7 +2,6 @@ name: "File Encrypter"
 
 descriptions:
   - "A simple Python Tkinter application that can encrypt and decrypt all types of files. When you encrypt a file, the program generates a key file with the same name, and you have to place the key file in the same directory where the encrypted file is located in order to decrypt the file."
-  - "Source code is available."
 
 links:
   - ["Windows", "'https://faseehapps.github.io/file-encrypter/v2.0/file_encrypter.zip' download"]

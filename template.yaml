@@ -1,0 +1,10 @@
+name: "Item Name"
+
+descriptions:
+  - "This is the first paragraph."
+  - "This is the second paragraph."
+
+links:
+  - ["Download", "'https://path/to/file.zip' download"]
+  - ["Source Code", "'https://path/to/source/code/website' target='_blank'"]
+  - ["More Info", "'https://path/to/website/'"]
