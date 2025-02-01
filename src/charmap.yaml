@@ -3,5 +3,5 @@ name: "Character Map"
 descriptions:
   - "Click a character to copy it to your clipboard, add frequently used characters to Favorites list for quick access and add your own characters if they are not present."
 
-download-links:
+links:
   - ["Windows", "'https://faseehapps.github.io/charmap/faseehs-charmap.zip' download"]
