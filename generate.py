@@ -36,8 +36,9 @@ with open('index.html', 'w') as index:
         
         index.write(f"\t\t\t<h1>{data["name"]}</h1>\n")
 
-        for description in data["descriptions"]:
-            index.write(f"\t\t\t<p>{description}</p>\n")
+        if "descriptions" in data and data["descriptions"]:
+            for description in data["descriptions"]:
+                index.write(f"\t\t\t<p>{description}</p>\n")
 
         index.write("\t\t\t<div class='download-buttons-container'>\n")
         for download_link in data["links"]:
