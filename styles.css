@@ -1,4 +1,4 @@
-/* Define default (light mode) colors */
+/* Colors */
 :root {
     --background: #ffffff;
     --primary: #3a3a3a;
@@ -13,11 +13,20 @@
     --panel: #3d3d3d;
 }
 
+/* Global */
+
 body {
     background-color: var(--background);
     color: var(--text-color);
     margin: 0;
 }
+
+h1, h2, h3, h4, p {
+    font-family: "Roboto", serif;
+    color: var(--primary);
+}
+
+/* Layout */
 
 .header {
     display: flex;
@@ -28,43 +37,6 @@ body {
     box-shadow: 0px 10px 0px var(--shadow);
     color: var(--on-primary);
     background-color: var(--background);
-}
-
-.logo {
-    font-family: "Roboto", serif;
-    font-optical-sizing: auto;
-    font-weight: 900;
-    font-style: normal;
-    font-variation-settings: "wdth" 100;
-    color: var(--primary);
-    margin: 16px;
-}
-
-h1, h2, h3, h4, p {
-    font-family: "Roboto", serif;
-    color: var(--primary);
-}
-
-.theme-toggle-btn {
-    font-family: "Roboto", serif;
-    font-size: 18px;
-    color: var(--primary);
-    background-color: var(--background);
-    border: 1px solid var(--primary);
-    box-shadow: 0px 0px 0px var(--shadow);
-    border-radius: 0px;
-    padding: 8px;
-    margin: 16px;
-    transition: color 0.3s ease ,background-color 0.3s ease, border 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
-}
-
-.theme-toggle-btn:hover {
-    cursor: pointer;
-    color: var(--background);
-    background-color: var(--primary);
-    border: 1px solid transparent;
-    transform: translateY(-4px);
-    box-shadow: 10px 10px 0px var(--shadow);
 }
 
 .items-container {
@@ -89,6 +61,40 @@ h1, h2, h3, h4, p {
     margin: 0px;
 }
 
+/* Components */
+
+.logo {
+    font-family: "Roboto", serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    color: var(--primary);
+    margin: 16px;
+}
+
+.theme-toggle-btn {
+    font-family: "Roboto", serif;
+    font-size: 18px;
+    color: var(--primary);
+    background-color: var(--background);
+    border: 1px solid var(--primary);
+    box-shadow: 0px 0px 0px var(--shadow);
+    border-radius: 0px;
+    padding: 8px;
+    margin: 16px;
+    transition: color 0.3s ease ,background-color 0.3s ease, border 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.theme-toggle-btn:hover {
+    cursor: pointer;
+    color: var(--background);
+    background-color: var(--primary);
+    border: 1px solid transparent;
+    transform: translateY(-4px);
+    box-shadow: 10px 10px 0px var(--shadow);
+}
+
 .download-button {
     font-size: 18px;
     padding: 8px;
@@ -96,7 +102,12 @@ h1, h2, h3, h4, p {
     background-color: var(--background);
     color: var(--primary);
     border: 1px solid var(--primary);
-    transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;;
+    transition:
+        background-color 0.3s ease,
+        color 0.3s ease,
+        border 0.3s ease,
+        box-shadow 0.3s ease,
+        transform 0.3s ease;
 }
 
 .download-button:hover {
