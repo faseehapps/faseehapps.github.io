@@ -1,10 +1,10 @@
-name: "Title"
+name: "File Encrypter"
 
 descriptions:
-  - "This is the first paragraph."
-  - "This is the second paragraph."
+  - "A simple Python Tkinter application that can encrypt and decrypt all types of files. When you encrypt a file, the program generates a key file with the same name, and you have to place the key file in the same directory where the encrypted file is located in order to decrypt the file."
+  - "Source code is available."
 
 download-links:
-  - ["Windows", "'path/to/file/for/windows' download"]
-  - ["Linux", "'path/to/file/for/linux' download"]
-  - ["Mac", "'path/to/file/for/mac' download"]
+  - ["Windows", "'https://faseehapps.github.io/file-encrypter/v2.0/file_encrypter.zip' download"]
+  - ["Linux (Debian)", "'https://faseehapps.github.io/file-encrypter/v1.0/file_encrypter_deb.zip' download"]
+  - ["Source Code", "'https://github.com/faseehapps/source-codes/tree/main/file-encrypter' download"]

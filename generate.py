@@ -40,7 +40,7 @@ with open('index.html', 'w') as index:
 
         index.write("\t\t\t<div class='download-buttons-container'>\n")
         for download_link in data["download-links"]:
-            index.write(f"""\t\t\t\t<a href={download_link[1]}><button class='download-button'>{download_link[0]}</button>\n""")
+            index.write(f"""\t\t\t\t<a href={download_link[1]}><button class='download-button'>{download_link[0]}</button></a>\n""")
         index.write("\t\t\t</div>\n")
 
         index.write("\t\t</div>\n")
