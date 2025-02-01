@@ -52,6 +52,7 @@ h1, h2, h3, h4, p {
     background-color: var(--panel);
     box-shadow: 10px 10px 0px var(--shadow);
     flex-direction: column;
+    width: 100%;
     max-width: 1000px;
     padding: 20px;
     box-sizing: border-box;
@@ -59,6 +60,10 @@ h1, h2, h3, h4, p {
 
 .item h1{
     margin: 0px;
+}
+
+.item p {
+    margin: 10px 0 10px 0;
 }
 
 .download-buttons-container {

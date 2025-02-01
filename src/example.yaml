@@ -1,0 +1,10 @@
+name: "Title"
+
+descriptions:
+  - "This is the first paragraph."
+  - "This is the second paragraph."
+
+download-links:
+  - ["Windows", "path/to/file/for/windows"]
+  - ["Linux", "path/to/file/for/linux"]
+  - ["Mac", "path/to/file/for/mac"]
