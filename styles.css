@@ -59,11 +59,11 @@ h1, h2, h3, h4, p {
 }
 
 .item h1{
-    margin: 0px;
+    margin: 0 0 0px 0;
 }
 
 .item p {
-    margin: 10px 0 10px 0;
+    margin: 4px 0 4px 0;
 }
 
 .download-buttons-container {
@@ -71,6 +71,7 @@ h1, h2, h3, h4, p {
     justify-content: flex-end;
     gap: 10px;
     flex-wrap: wrap;
+    margin-top: 12px;
 }
 
 /* Components */

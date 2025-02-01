@@ -5,6 +5,6 @@ descriptions:
   - "This is the second paragraph."
 
 download-links:
-  - ["Windows", "path/to/file/for/windows"]
-  - ["Linux", "path/to/file/for/linux"]
-  - ["Mac", "path/to/file/for/mac"]
+  - ["Windows", "'path/to/file/for/windows' download"]
+  - ["Linux", "'path/to/file/for/linux' download"]
+  - ["Mac", "'path/to/file/for/mac' download"]
