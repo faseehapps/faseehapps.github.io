@@ -131,7 +131,8 @@ h1, h2, h3, h4, p {
     box-shadow: 0 4px 0 var(--shadow);
 }
 
-.download-button:focus {
+.download-button:active {
+    transition: box-shadow 0.1s ease, transform 0.1s ease;
     background-color: var(--primary);
     color: var(--background);
     transform: translateY(0px);
