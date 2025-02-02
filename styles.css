@@ -132,9 +132,9 @@ h1, h2, h3, h4, p {
 }
 
 .download-button:active {
-    transition: box-shadow 0.1s ease, transform 0.1s ease;
-    background-color: var(--primary);
-    color: var(--background);
+    transition:
+        box-shadow 0.0s ease,
+        transform 0.0s ease;
     transform: translateY(0px);
     box-shadow: 0 0 0 var(--shadow);;
 }
