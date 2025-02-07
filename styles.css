@@ -118,23 +118,16 @@ h1, h2, h3, h4, p {
     transform: translateY(-6px);
     box-shadow: 0 6px 0 var(--shadow);
     transition:
-        background-color 0.3s ease,
-        color 0.3s ease,
-        box-shadow 0.3s ease,
-        transform 0.3s ease;
+        box-shadow 0.2s ease,
+        transform 0.2s ease;
 }
 
 .download-button:hover {
-    background-color: var(--primary);
-    color: var(--background);
     transform: translateY(-4px);
     box-shadow: 0 4px 0 var(--shadow);
 }
 
 .download-button:active {
-    transition:
-        box-shadow 0.0s ease,
-        transform 0.0s ease;
-    transform: translateY(0px);
-    box-shadow: 0 0 0 var(--shadow);;
+    transform: translateY(0);
+    box-shadow: 0 0 0 var(--shadow);
 }
