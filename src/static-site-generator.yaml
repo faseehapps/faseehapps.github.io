@@ -1,6 +1,7 @@
 name: "Static Site Generator"
 
 descriptions:
+ - "Might not work for you, but still worth a try!"
 
 links:
   - ["View on GitHub", "'https://github.com/faseehapps/static-site-generator' target='_blank'"]
