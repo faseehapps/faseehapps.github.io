@@ -3,6 +3,7 @@ name: "Apple Jump"
 path_to_img: "https://faseehapps.github.io/assets/apple-jump.png"
 
 descriptions:
+ - "Control your character with a simple mouse drag and bounce off apples to get higher and higher! Gently touch apples to snack on them for bonus rewards. With a charming cartoon style and intuitive controls, this lighthearted adventure keeps going—even beyond the stars! Download the game and see how high you can go."
 
 links:
   - ["View on Itch.io", "'https://faseehgames.itch.io/apple-jump' target='_blank'"]
