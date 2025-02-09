@@ -1,6 +1,6 @@
 name: "Item Name"
 
-path_to_img: "path/to/img.jpg"
+path_to_img: "https://faseehapps.github.io/assets/image.png"
 
 descriptions:
   - "This is the first paragraph."
