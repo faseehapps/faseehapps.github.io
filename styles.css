@@ -57,9 +57,10 @@ h1, h2, h3, h4, p {
 
 .item {
     display: flex;
-    background-color: var(--panel);
     width: 100%;
     padding: 20px;
+    border: 1px solid var(--primary);
+    border-radius: 24px;
     box-sizing: border-box;
 }
 
@@ -67,6 +68,7 @@ h1, h2, h3, h4, p {
     width: 75%;
     height: auto;
     margin-bottom: auto;
+    border-radius: 20px;
 }
 
 @media (max-width: 600px) {
@@ -83,7 +85,6 @@ h1, h2, h3, h4, p {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: var(--panel);
     width: 100%;
     padding: 20px;
     box-sizing: border-box;
@@ -127,8 +128,8 @@ h1, h2, h3, h4, p {
     background-color: var(--background);
     border: 1px solid var(--primary);
     box-shadow: 0 0 0 var(--shadow);
-    border-radius: 0px;
-    padding: 8px;
+    border-radius: 999px;
+    padding: 8px 16px 8px 16px;
     margin: 16px;
     transition: color 0.3s ease ,background-color 0.3s ease, border 0.3s ease, box-shadow 0.3s ease;
 }
