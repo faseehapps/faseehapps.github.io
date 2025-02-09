@@ -66,11 +66,23 @@ h1, h2, h3, h4, p {
 .item-image {
     width: 75%;
     height: auto;
+    margin-bottom: auto;
+}
+
+@media (max-width: 600px) {
+    .item {
+        flex-direction: column;
+    }
+    .item-image {
+        width: 100%;
+    }
 }
 
 .item-content {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     background-color: var(--panel);
     width: 100%;
     padding: 20px;
@@ -79,15 +91,18 @@ h1, h2, h3, h4, p {
 
 .item h1{
     margin: 0 0 8px 0;
+    text-align: center;
 }
 
 .item p {
     margin: 0 0 8px 0;
+    text-align: center;
 }
 
 .download-buttons-container {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
+    align-items: center;
     gap: 10px;
     flex-wrap: wrap;
     margin-top: 12px;
