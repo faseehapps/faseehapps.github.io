@@ -58,28 +58,21 @@ h1, h2, h3, h4, p {
 }
 
 .item {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     width: 100%;
     padding: 20px;
+    gap: 20px;
     border: 1px solid var(--primary);
     border-radius: 24px;
     box-sizing: border-box;
 }
 
 .item-image {
-    width: 75%;
+    width: 100%;
     height: auto;
     margin-bottom: auto;
     border-radius: 20px;
-}
-
-@media (max-width: 600px) {
-    .item {
-        flex-direction: column;
-    }
-    .item-image {
-        width: 100%;
-    }
 }
 
 .item-content {
