@@ -29,26 +29,32 @@ with open('index.html', 'w') as index:
 """)
     
     for item in source_files:
-        index.write("\t\t<div class='item'>\n")
+        index.write("\t\t<div class='item'>") # div item.
 
         with open(item, 'r') as file:
             data = yaml.safe_load(file)
+
+        if "path_to_img" in data:
+            index.write(f"<img src='{data["path_to_img"]}' class='item-image'>")
         
-        index.write(f"\t\t\t<h1>{data["name"]}</h1>\n")
+        # Content goes inside `item-content`
+        index.write(f"<div class='item-content'>") # div item-content.
+        index.write(f"<h1>{data["name"]}</h1>")
 
         if "descriptions" in data and data["descriptions"]:
             for description in data["descriptions"]:
-                index.write(f"\t\t\t<p>{description}</p>\n")
+                index.write(f"<p>{description}</p>")
 
-        index.write("\t\t\t<div class='download-buttons-container'>\n")
+        index.write("<div class='download-buttons-container'>") # div download-buttons-container
         for download_link in data["links"]:
-            index.write(f"""\t\t\t\t<a href={download_link[1]}><button class='download-button'>{download_link[0]}</button></a>\n""")
-        index.write("\t\t\t</div>\n")
-
-        index.write("\t\t</div>\n")
+            index.write(f"""<a href={download_link[1]}><button class='download-button'>{download_link[0]}</button></a>""")
+        
+        index.write("</div>") # close download-buttons-container.
+        index.write("</div>") # close item-content.
+        index.write("</div>\n") # close item.
 
     index.write("""
-    <div>
+    </div>
 
     <script src="script.js" defer></script>
 </body>
