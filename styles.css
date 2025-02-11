@@ -94,6 +94,7 @@ h1, h2, h3, h4, p {
         border: none;
         border-bottom: 1px solid var(--primary);
     }
+    
     .item-image {
         max-width: 300px;
     }
