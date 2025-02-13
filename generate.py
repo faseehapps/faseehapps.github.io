@@ -2,7 +2,13 @@ import os
 import yaml
 
 source_dir = "src/"
-source_files = [os.path.join(source_dir, file) for file in os.listdir(source_dir)]
+print(f"source-dir: {source_dir}")
+source_files = sorted([os.path.join(source_dir, file) for file in os.listdir(source_dir)])
+print("source_files:")
+for file in source_files:
+    print("   ", file)
+
+print("Generating index.html...")
 
 with open('index.html', 'w') as index:
     index.write("""
@@ -61,4 +67,4 @@ with open('index.html', 'w') as index:
 </html>
 """)
 
-print("Process Complete!")
+print("\nProcess Complete!")
