@@ -97,6 +97,7 @@ h1, h2, h3, h4, p {
     
     .item-image {
         max-width: 300px;
+        border-radius: 0px;
     }
 }
 
