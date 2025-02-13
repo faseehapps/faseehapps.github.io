@@ -1,0 +1,9 @@
+name: "Dot Smash"
+
+path_to_img: "https://faseehapps.github.io/assets/dot-smash.png"
+
+descriptions:
+  - "Made with C++ and SFML"
+
+links:
+  - ["Download", "'https://faseehapps.github.io/dot-smash/source-code.zip' download='dot-smash.zip'"]

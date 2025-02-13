@@ -7,6 +7,6 @@ descriptions:
   - "This is the second paragraph."
 
 links:
-  - ["Download", "'https://path/to/file.zip' download"]
+  - ["Download", "'https://faseehapps.github.io/repository-name/path/to/file.zip' download='newname.zip'"]
   - ["Source Code", "'https://path/to/source/code/website' target='_blank'"]
   - ["More Info", "'https://path/to/website/'"]

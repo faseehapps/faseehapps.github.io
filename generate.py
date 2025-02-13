@@ -60,3 +60,5 @@ with open('index.html', 'w') as index:
 </body>
 </html>
 """)
+
+print("Process Complete!")
