@@ -1,7 +1,7 @@
 name: "Static Site Generator"
 
 descriptions:
- - "My previous website was built using this. The current website uses a newer version, which is available for download from the repository."
+ - "Behind my previous website. The current website uses a newer version, which is available for download from the repository."
 
 links:
   - ["View on GitHub", "'https://github.com/faseehapps/static-site-generator' target='_blank'"]
