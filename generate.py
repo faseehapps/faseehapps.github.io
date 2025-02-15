@@ -35,14 +35,15 @@ with open('index.html', 'w') as index:
 """)
     
     for item in source_files:
-        index.write("\t\t<div class='item'>") # div item.
-
         with open(item, 'r') as file:
             data = yaml.safe_load(file)
-
-        if "path_to_img" in data:
-            index.write(f"<img src='{data["path_to_img"]}' class='item-image'>")
         
+        if "path_to_img" in data:
+            index.write("\t\t<div class='item-with-img'>") # div item-with-image.
+            index.write(f"<img src='{data["path_to_img"]}' class='item-img'>")
+        else:
+            index.write("\t\t<div class='item-without-img'>") # div item-without-image.
+
         # Content goes inside `item-content`
         index.write(f"<div class='item-content'>") # div item-content.
         index.write(f"<h1>{data["name"]}</h1>")
