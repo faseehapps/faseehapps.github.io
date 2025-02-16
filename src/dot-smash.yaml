@@ -1,6 +1,6 @@
 name: "Dot Smash"
 
-path_to_img: "https://faseehapps.github.io/assets/dot-smash.png"
+path_to_img: "https://faseehapps.github.io/assets/dot-smash.jpg"
 
 descriptions:
   - "A remake of <i>Dot Dash</i>. Made with C++ and SFML"
