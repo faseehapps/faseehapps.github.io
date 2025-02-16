@@ -1,5 +1,7 @@
 name: "Orbital Jump"
 
+path_to_vid: "https://faseehapps.github.io/assets/orbital-jump.mp4"
+
 descriptions:
  - "Another Unity game where you jump over planets instead"
 

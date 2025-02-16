@@ -38,7 +38,10 @@ with open('index.html', 'w') as index:
         with open(item, 'r') as file:
             data = yaml.safe_load(file)
         
-        if "path_to_img" in data:
+        if "path_to_vid" in data:
+            index.write("\t\t<div class='item-with-img'>") # div item-with-image.
+            index.write(f"<video class='item-img' autoplay muted loop playsinline><source src='{data["path_to_vid"]}' type='video/mp4'>Your browser does not support the video tag.</video>")
+        elif "path_to_img" in data:
             index.write("\t\t<div class='item-with-img'>") # div item-with-image.
             index.write(f"<img src='{data["path_to_img"]}' class='item-img'>")
         else:
