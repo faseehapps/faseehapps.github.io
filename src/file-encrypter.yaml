@@ -4,6 +4,6 @@ descriptions:
   - "Keeps your files safe. Made with Python, Tkinter, and the Cryptography library"
 
 links:
-  - ["Windows", "'https://faseehapps.github.io/file-encrypter/v2.0/file_encrypter.zip' download"]
-  - ["Linux (Debian)", "'https://faseehapps.github.io/file-encrypter/v1.0/file_encrypter_deb.zip' download"]
+  - ["Download for Windows", "'https://faseehapps.github.io/file-encrypter/v2.0/file_encrypter.zip' download"]
+  - ["Download for Linux (Debian)", "'https://faseehapps.github.io/file-encrypter/v1.0/file_encrypter_deb.zip' download"]
   - ["View Source Code", "'https://github.com/faseehapps/source-codes/tree/main/file-encrypter' target='_blank'"]
