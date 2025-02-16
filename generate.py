@@ -65,6 +65,10 @@ with open('index.html', 'w') as index:
 
     index.write("""
     </div>
+                
+    <div class="footer">
+        <p>Thanks for visiting! See you again.</p>
+    </div>
 
     <script src="script.js" defer></script>
 </body>
