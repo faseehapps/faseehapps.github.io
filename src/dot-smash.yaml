@@ -6,6 +6,6 @@ descriptions:
   - "A remake of <i>Dot Dash</i>. Made with C++ and SFML"
 
 links:
-  - ["Download", "'https://faseehapps.github.io/dot-smash/source-code.zip' download='dot-smash.zip'"]
+  - ["Download", "'https://faseehapps.github.io'"]
   - ["View Source Code", "'https://github.com/faseehapps/dot-smash/blob/main/main.cpp', target='_blank'"]
   - ["Download Source Code", "'https://faseehapps.github.io/dot-smash/source-code.zip' download='dot-smash-source-code.zip'"]
