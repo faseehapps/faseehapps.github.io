@@ -1,5 +1,7 @@
 name: "File Encrypter"
 
+path_to_img: "https://faseehapps.github.io/assets/file-encrypter.png"
+
 descriptions:
   - "Keeps your files safe. Made with Python, Tkinter, and the Cryptography library"
 
