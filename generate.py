@@ -67,7 +67,7 @@ with open('index.html', 'w') as index:
     </div>
                 
     <div class="footer">
-        <p>Thanks for visiting! See you again.</p>
+        <p>Thanks for visiting! See you again 😊</p>
     </div>
 
     <script src="script.js" defer></script>
