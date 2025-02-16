@@ -63,9 +63,9 @@ h1, h2, h3, h4, p {
     width: 100%;
     gap: 0px;
     border: 1px solid var(--primary);
-    border-radius: 24px;
+    border-radius: 6px;
     box-sizing: border-box;
-    overflow: hidden;
+    overflow: hidden; /* To mask the image inside the border */
 }
 
 .item-img {
@@ -77,7 +77,7 @@ h1, h2, h3, h4, p {
     display: flex;
     width: 100%;
     border: 1px solid var(--primary);
-    border-radius: 24px;
+    border-radius: 6px;
 }
 
 @media (max-width: 768px) {
