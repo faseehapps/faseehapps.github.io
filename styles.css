@@ -45,6 +45,22 @@ h1, h2, h3, h4, p {
     z-index: 10;
 }
 
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50vh;
+    margin: 0px;
+    padding: 20px 20px 20px 20px;
+    background-image: url('https://faseehapps.github.io/assets/website-bg-light.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+}
+
 .items-container {
     display: flex;
     flex-direction: column;
@@ -151,6 +167,21 @@ h1, h2, h3, h4, p {
     background-color: var(--primary);
     border: 1px solid transparent;
     box-shadow: 0 0 15px var(--shadow);
+}
+
+.header-title {
+    font-family: "Roboto", serif;
+    font-size: 70px;
+    font-weight: 900;
+    text-align: center;
+    margin: 5px;
+}
+
+.header-text {
+    font-family: "Roboto", serif;
+    font-size: 18px;
+    text-align: center;
+    margin: 10px;
 }
 
 .download-button {

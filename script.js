@@ -8,6 +8,9 @@ function updateButtonText(theme) {
 // Check stored theme preference
 const storedTheme = localStorage.getItem("theme") || "light"; // Default to light if no preference
 document.documentElement.setAttribute("data-theme", storedTheme);
+if (storedTheme === "dark") {  // Change the header background image
+    document.getElementById('header').style.backgroundImage = "url('https://faseehapps.github.io/assets/website-bg-dark.jpg')";
+}
 updateButtonText(storedTheme); // Update button text based on stored theme
 
 toggleButton.addEventListener("click", () => {
@@ -16,6 +19,12 @@ toggleButton.addEventListener("click", () => {
 
     // Toggle theme and store in localStorage
     document.documentElement.setAttribute("data-theme", newTheme);
+    if (newTheme === "light") {  // Change the header background image
+        document.getElementById('header').style.backgroundImage = "url('https://faseehapps.github.io/assets/website-bg-light.jpg')";
+    }
+    else {
+        document.getElementById('header').style.backgroundImage = "url('https://faseehapps.github.io/assets/website-bg-dark.jpg')";
+    }
     localStorage.setItem("theme", newTheme); // Save the preference
 
     // Update button text

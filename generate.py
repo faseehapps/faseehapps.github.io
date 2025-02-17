@@ -30,6 +30,11 @@ with open('index.html', 'w') as index:
         <h1 class="logo">FaseehApps</h1>
         <button class="theme-toggle-btn" id="theme-toggle"></button>
     </div>
+                
+    <div class="header" id="header">
+        <h1 class="header-title">Hi, I am Faseeh!</h1>
+        <p class="header-text">Download my apps here</p>
+    </div>
 
     <div class="items-container">
 """)
