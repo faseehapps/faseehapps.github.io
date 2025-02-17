@@ -26,7 +26,7 @@ with open('index.html', 'w') as index:
     <link rel="icon" type="image/png" href="assets/favicon.png">
 </head>
 <body>
-    <div class="header">
+    <div class="sticky-header">
         <h1 class="logo">FaseehApps</h1>
         <button class="theme-toggle-btn" id="theme-toggle"></button>
     </div>
