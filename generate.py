@@ -70,6 +70,22 @@ with open('index.html', 'w') as index:
 
     index.write("""
     </div>
+
+    <section class="review-section">
+        <div class="review-form-div">
+            <form class="review-form" action="/submit-review" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <br><br>
+                <label for="review">Review:</label>
+                <textarea id="review" name="review" required></textarea>
+                <br><br>
+                <button class="download-button" type="submit">Submit</button>
+            </form>
+        </div>
+
+        <div id='review-list' class="review-list"></div>
+    </section>
                 
     <div class="footer">
         <p>Thanks for visiting! See you again 😊</p>

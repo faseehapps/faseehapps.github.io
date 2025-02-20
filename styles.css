@@ -133,6 +133,33 @@ h1, h2, h3, h4, p {
     margin-top: 12px;
 }
 
+.review-section {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px;
+    gap: 10px;
+    background-color: var(--panel);
+    box-sizing: border-box;
+}
+
+.review-form-div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.review-list {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
 /* Components */
 
 .logo {
@@ -179,6 +206,34 @@ h1, h2, h3, h4, p {
     font-size: 18px;
     text-align: center;
     margin: 10px;
+}
+
+.review-form {
+    width: 100%;
+    padding: 20px;
+}
+    
+.review-form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-family: "Roboto", serif;
+    color: var(--primary);
+}
+    
+.review-form input, .review-form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-family: "Roboto", serif;
+    color: var(--primary);
+    background-color: transparent;
+    box-sizing: border-box;
+}
+
+.review-form textarea {
+    height: 140px;
 }
 
 .download-button {
