@@ -26,12 +26,11 @@ toggleButton.addEventListener("click", () => {
 // Fetch reviews
 async function fetchReviews() {
     let reviewList = document.getElementById('review-list');
+    reviewList.innerHTML = ''; 
 
     try {
         let response = await fetch("https://faseeh1080.pythonanywhere.com/get-reviews");
         let data = await response.json();
-
-        reviewList.innerHTML = ''; 
 
         data.forEach(review => {
             let div = document.createElement('div');
