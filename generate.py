@@ -117,7 +117,7 @@ print("Reading source files...")
 styles = ""
 for item in source_files:
     with open(item, 'r') as file:
-        styles += file.read()
+        styles += file.read() + '\n'
 
 print("Generating styles.css...")
 

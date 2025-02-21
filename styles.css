@@ -93,6 +93,7 @@
     transform: translateY(0);
     box-shadow: 0 0 0 var(--shadow);
 }
+
 .footer {
     display: flex;
     flex-direction: column;
@@ -107,6 +108,7 @@
 .footer p {
     text-align: center;
 }
+
 :root {
     --background: #ffffff;
     --primary: #3a3a3a;
@@ -134,7 +136,8 @@ body {
 h1, h2, h3, h4, p {
     font-family: "Roboto", serif;
     color: var(--primary);
-}.sticky-header {
+}
+.sticky-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -204,7 +207,8 @@ h1, h2, h3, h4, p {
     font-size: 18px;
     text-align: center;
     margin: 10px;
-}.review-section {
+}
+.review-section {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -300,3 +304,4 @@ h1, h2, h3, h4, p {
     margin: 0px;
     padding: 0px;
 }
+
