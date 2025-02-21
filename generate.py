@@ -1,9 +1,9 @@
 import os
 import yaml
 
-source_dir = "src/"
-print(f"source-dir: {source_dir}")
-source_files = sorted([os.path.join(source_dir, file) for file in os.listdir(source_dir)])
+css_source_dir = "src/"
+print(f"source_dir: {css_source_dir}")
+source_files = sorted([os.path.join(css_source_dir, file) for file in os.listdir(css_source_dir)])
 print("source_files:")
 for file in source_files:
     print("   ", file)
@@ -99,4 +99,26 @@ with open('index.html', 'w') as index:
 </html>
 """)
 
-print("\nProcess Complete!")
+print("HTML file generation complete.")
+
+css_source_dir = "stylesheets/"
+print(f"\ncss_source_dir: {css_source_dir}")
+source_files = sorted([os.path.join(css_source_dir, file) for file in os.listdir(css_source_dir)])
+print("css_source_files:")
+for file in source_files:
+    print("   ", file)
+
+print("Reading source files...")
+
+styles = ""
+for item in source_files:
+    with open(item, 'r') as file:
+        styles += file.read()
+
+print("Generating styles.css...")
+
+with open ('styles.css', 'w') as styles_css:
+    styles_css.write(styles)
+
+print("CSS file generation complete.")
+print("\nStatic site generation successful.")

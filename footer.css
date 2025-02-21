@@ -1,0 +1,14 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 0px;
+    padding: 20px;
+    border-top: 1px solid var(--primary);
+    box-sizing: border-box;
+}
+
+.footer p {
+    text-align: center;
+}
