@@ -65,6 +65,7 @@
 
 .review-form textarea {
     height: 140px;
+    resize: none;
 }
 
 .review-list-container {

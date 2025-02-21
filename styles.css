@@ -275,6 +275,7 @@ h1, h2, h3, h4, p {
 
 .review-form textarea {
     height: 140px;
+    resize: none;
 }
 
 .review-list-container {
