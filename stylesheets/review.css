@@ -11,7 +11,7 @@
 
 .review-form-list-div { 
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 2fr 2fr;
     width: 100%;
     gap: 30px;
     margin: 0;
