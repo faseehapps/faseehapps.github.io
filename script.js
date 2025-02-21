@@ -40,7 +40,7 @@ async function fetchReviews() {
             reviewList.appendChild(div);
         });
     } catch (error) {
-        ['Failed to fetch reviews', 'Failed to fetch reviews. Process aborted.'].forEach(message => {
+        ['Failed to fetch reviews.', 'Failed to fetch reviews. Process aborted.'].forEach(message => {
             let div = document.createElement('div');
             div.className = 'review';
             div.innerHTML = `<p><strong>Unavailable</strong><br>${message}</p>`;
