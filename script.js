@@ -23,6 +23,22 @@ toggleButton.addEventListener("click", () => {
 });
 
 
+document.getElementById('review-form').addEventListener('submit', async function(event) {
+    event.preventDefault(); // Prevent the default form submission
+
+    const formData = new FormData(this);
+    const response = await fetch('https://faseeh1080@pythonanywhere.com/submit-review', {
+        method: 'POST',
+        body: formData
+    });
+
+    if (response.ok) {
+        alert('Review submitted successfully!');
+    } else {
+        alert('Failed to submit review.');
+    }
+});
+
 
 async function fetchReviews() {
     let reviewList = document.getElementById('review-list');

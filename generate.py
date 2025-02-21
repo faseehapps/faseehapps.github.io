@@ -73,7 +73,7 @@ with open('index.html', 'w') as index:
 
     <section class="review-section">
         <div class="review-form-div">
-            <form class="review-form" action="/submit-review" method="post">
+            <form id='review-form' class="review-form" action="/submit-review" method="post">
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required>
                 <br><br>
