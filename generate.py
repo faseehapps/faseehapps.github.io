@@ -36,7 +36,7 @@ with open('index.html', 'w') as index:
         <p class="header-text">Download my apps here</p>
     </div>
 
-    <div class="items-container">
+    <section class="downloads-section">
 """)
     
     for item in source_files:
@@ -69,7 +69,7 @@ with open('index.html', 'w') as index:
         index.write("</div>\n") # close item.
 
     index.write("""
-    </div>
+    </section>
 
     <section class="review-section">
         <div class="review-form-list-div">
