@@ -5,8 +5,8 @@ css_source_dir = "src/"
 print(f"source_dir: {css_source_dir}")
 source_files = sorted([os.path.join(css_source_dir, file) for file in os.listdir(css_source_dir)])
 print("source_files:")
-for file in source_files:
-    print("   ", file)
+for i in range(0, len(source_files)):
+    print(f"{i + 1}. {source_files[i]}")
 
 print("Generating index.html...")
 
@@ -108,21 +108,17 @@ print("HTML file generation complete.")
 css_source_dir = "stylesheets/"
 print(f"\ncss_source_dir: {css_source_dir}")
 source_files = sorted([os.path.join(css_source_dir, file) for file in os.listdir(css_source_dir)])
-print("css_source_files:")
-for file in source_files:
-    print("   ", file)
-
-print("Reading source files...")
 
 styles = ""
 for item in source_files:
     with open(item, 'r') as file:
+        print(f"Reading {item}...")
         styles += file.read() + '\n'
 
-print("Generating styles.css...")
+print(f"Writing styles into 'styles.css'...")
 
 with open ('styles.css', 'w') as styles_css:
     styles_css.write(styles)
 
-print("CSS file generation complete.")
-print("\nStatic site generation successful.")
+print("All stylesheets successfully merged into 'styles.css'.")
+print("\nStatic site successfully generated.")
