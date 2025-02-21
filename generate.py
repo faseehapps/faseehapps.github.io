@@ -72,19 +72,22 @@ with open('index.html', 'w') as index:
     </div>
 
     <section class="review-section">
-        <div id='review-form-div' class="review-form-div">
-            <form id='review-form' class="review-form" action="/submit-review" method="post">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" maxlength="25" required>
-                <br><br>
-                <label for="review">Review:</label>
-                <textarea id="review" name="review" maxlength="600" required></textarea>
-                <br><br>
-                <button class="download-button" type="submit">Submit</button>
-            </form>
+        <div class="review-form-list-div">
+            <div id='review-form-div' class="review-form-div">
+                <form id='review-form' class="review-form" action="/submit-review" method="post">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" maxlength="25" required>
+                    <br><br>
+                    <label for="review">Review:</label>
+                    <textarea id="review" name="review" maxlength="600" required></textarea>
+                    <br><br>
+                    <button class="download-button" type="submit">Post</button>
+                </form>
+            </div>
+                
+            <div id='review-list' class="review-list"></div>
         </div>
 
-        <div id='review-list' class="review-list"></div>
     </section>
                 
     <div class="footer">
