@@ -160,6 +160,17 @@ h1, h2, h3, h4, p {
     box-sizing: border-box;
 }
 
+.review {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background-color: var(--background);
+}
+
+.review p {
+    text-align: left;
+}
+
 /* Components */
 
 .logo {
@@ -210,7 +221,7 @@ h1, h2, h3, h4, p {
 
 .review-form {
     width: 100%;
-    padding: 20px;
+    padding: 0px;
 }
     
 .review-form label {

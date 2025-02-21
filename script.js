@@ -35,11 +35,17 @@ async function fetchReviews() {
 
         data.forEach(review => {
             let div = document.createElement('div');
+            div.className = 'review';
             div.innerHTML = `<p><strong>${review.name}</strong><br>${review.review}</p>`;
             reviewList.appendChild(div);
         });
     } catch (error) {
-        reviewList.innerHTML = "<p>Error fetching reviews";
+        ['Failed to fetch reviews', 'Failed to fetch reviews. Process aborted.'].forEach(message => {
+            let div = document.createElement('div');
+            div.className = 'review';
+            div.innerHTML = `<p><strong>Unavailable</strong><br>${message}</p>`;
+            reviewList.appendChild(div);
+        });
     }
 }
 
