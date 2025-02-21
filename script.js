@@ -27,7 +27,7 @@ document.getElementById('review-form').addEventListener('submit', async function
     event.preventDefault(); // Prevent the default form submission
 
     const formData = new FormData(this);
-    const response = await fetch('https://faseeh1080@pythonanywhere.com/submit-review', {
+    const response = await fetch('https://faseeh1080.pythonanywhere.com/submit-review', {
         method: 'POST',
         body: formData
     });
