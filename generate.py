@@ -74,6 +74,7 @@ with open('index.html', 'w') as index:
     <section class="review-section">
         <div class="review-form-list-div">
             <div id='review-form-div' class="review-form-div">
+                <h2>Your Review</h2>
                 <form id='review-form' class="review-form" action="/submit-review" method="post">
                     <label for="name">Name:</label>
                     <input type="text" id="name" name="name" maxlength="25" required>
@@ -85,7 +86,10 @@ with open('index.html', 'w') as index:
                 </form>
             </div>
                 
-            <div id='review-list' class="review-list"></div>
+            <div class="review-list-container">
+                <h2>Reviews</h2>
+                <div id='review-list' class="review-list"></div>
+            </div>
         </div>
 
     </section>

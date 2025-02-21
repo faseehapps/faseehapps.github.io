@@ -93,6 +93,20 @@
     transform: translateY(0);
     box-shadow: 0 0 0 var(--shadow);
 }
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 0px;
+    padding: 20px;
+    border-top: 1px solid var(--primary);
+    box-sizing: border-box;
+}
+
+.footer p {
+    text-align: center;
+}
 :root {
     --background: #ffffff;
     --primary: #3a3a3a;
@@ -195,19 +209,24 @@ h1, h2, h3, h4, p {
     flex-direction: column;
     width: 100%;
     max-width: 1200px;
-    margin: 20px;
-    padding: 20px;
-    background-color: var(--panel);
+    margin: 0 0 20px 0;
+    padding: 40px 20px 20px 20px;
+    border-top: 1px solid var(--primary);
     box-sizing: border-box;
 }
 
-.review-form-list-div { /* contains review-form-div and review-list */
+.review-form-list-div { 
     display: grid;
     grid-template-columns: 1fr 2fr;
     width: 100%;
     gap: 30px;
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
+    direction: rtl;
+}
+
+.review-form-list-div > * {
+    direction: ltr;
 }
 
 @media (max-width: 768px) {
@@ -254,6 +273,11 @@ h1, h2, h3, h4, p {
     height: 140px;
 }
 
+.review-list-container {
+    display: flex;
+    flex-direction: column;
+}
+
 .review-list { /* A list of review divisions */
     display: flex;
     flex-direction: column;
@@ -268,7 +292,6 @@ h1, h2, h3, h4, p {
     flex-direction: column;
     width: 100%;
     padding: 10px;
-    background-color: var(--background);
     box-sizing: border-box;
 }
 
