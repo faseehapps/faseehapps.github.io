@@ -88,7 +88,7 @@ with open('index.html', 'w') as index:
                 
             <div class="review-list-container">
                 <h2>Reviews</h2>
-                <div id='review-list' class="review-list"></div>
+                <div id='review-list' class="review-list"><p>Loading...</p></div>
             </div>
         </div>
 
