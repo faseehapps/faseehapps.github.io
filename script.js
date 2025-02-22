@@ -26,7 +26,6 @@ toggleButton.addEventListener("click", () => {
 // Fetch reviews
 async function fetchReviews() {
     let reviewList = document.getElementById('review-list');
-    reviewList.innerHTML = ''; 
 
     try {
         let response = await fetch("https://faseeh1080.pythonanywhere.com/get-reviews");
@@ -36,6 +35,7 @@ async function fetchReviews() {
             let div = document.createElement('div');
             div.className = 'review';
             div.innerHTML = `<p><strong>${review.name}</strong><br>${review.review}</p>`;
+            reviewList.innerHTML = ''; // Place it near appending to avoid clearing the content too early
             reviewList.appendChild(div);
         });
     } catch (error) {
@@ -43,6 +43,7 @@ async function fetchReviews() {
             let div = document.createElement('div');
             div.className = 'review';
             div.innerHTML = `<p><strong>Unavailable</strong><br>${message}</p>`;
+            reviewList.innerHTML = ''; // Place it near appending to avoid clearing the content too early
             reviewList.appendChild(div);
         });
     }
