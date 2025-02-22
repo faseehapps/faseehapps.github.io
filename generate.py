@@ -53,9 +53,9 @@ HTML_TEMPLATE = """
 
     </section>
                 
-    <div class="footer">
+    <footer class="footer">
         <p>Thanks for visiting! See you again 😊</p>
-    </div>
+    </footer>
 
     <script src="script.js" defer></script>
 </body>
