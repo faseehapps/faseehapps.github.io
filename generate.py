@@ -62,19 +62,28 @@ HTML_TEMPLATE = """
 </html>
 """ # Replace {content} substring with the actual content
 
+def generator():
+    print("Generaing HTML...")
+
+    content = ""
+    for filename in os.listdir("src"):
+        content += download_item(os.path.join("src", filename))
+
+    with open("index.html", 'w', encoding='utf-8') as opened_file:
+        opened_file.write(HTML_TEMPLATE.replace("{content}", add_identation(content, 2)))
+
+    print("Merging CSS files into styles.css...")
+    with open("styles.css", 'w', encoding='utf-8') as opened_file:
+        opened_file.write(merge_css_files("stylesheets"))
+
+    print("Process complete!")
+
 # Start
 
-print("Generaing HTML...")
-
-content = ""
-for filename in os.listdir("src"):
-    content += download_item(os.path.join("src", filename))
-
-with open("index.html", 'w', encoding='utf-8') as opened_file:
-    opened_file.write(HTML_TEMPLATE.replace("{content}", add_identation(content, 2)))
-
-print("Merging CSS files into styles.css...")
-with open("styles.css", 'w', encoding='utf-8') as opened_file:
-    opened_file.write(merge_css_files("stylesheets"))
-
-print("Process complete!")
+if input("Activate debug mode? (y = yes, anything else = no): ").strip().lower() == 'y':
+    while True:
+        generator()
+        if input("Debug mode: Press Enter to refresh, 'e' to exit: ").strip().lower() == 'e':
+            break
+else:
+    generator()
