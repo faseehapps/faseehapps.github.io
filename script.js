@@ -30,20 +30,20 @@ async function fetchReviews() {
     try {
         let response = await fetch("https://faseeh1080.pythonanywhere.com/get-reviews");
         let data = await response.json();
+        reviewList.innerHTML = '';
 
         data.forEach(review => {
             let div = document.createElement('div');
             div.className = 'review';
             div.innerHTML = `<p><strong>${review.name}</strong><br>${review.review}</p>`;
-            reviewList.innerHTML = ''; // Place it near appending to avoid clearing the content too early
             reviewList.appendChild(div);
         });
     } catch (error) {
+        reviewList.innerHTML = '';
         ['Failed to fetch reviews.', 'Failed to fetch reviews. Process aborted.'].forEach(message => {
             let div = document.createElement('div');
             div.className = 'review';
             div.innerHTML = `<p><strong>Unavailable</strong><br>${message}</p>`;
-            reviewList.innerHTML = ''; // Place it near appending to avoid clearing the content too early
             reviewList.appendChild(div);
         });
     }
