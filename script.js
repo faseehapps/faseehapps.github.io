@@ -22,6 +22,21 @@ toggleButton.addEventListener("click", () => {
     updateButtonText(newTheme);
 });
 
+// Make the items appear dynamically
+document.addEventListener("DOMContentLoaded", function () {
+    const elements = document.querySelectorAll(".hidden");
+
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("show");
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.5 });
+
+    elements.forEach(el => observer.observe(el));
+});
 
 // Fetch reviews
 async function fetchReviews() {

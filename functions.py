@@ -27,7 +27,7 @@ def download_item(path_to_src: str) -> str:
         download_btns.append(f"""<a href={download_link[1]}><button class='download-button'>{download_link[0]}</button></a>""")
 
     return f"""
-<div class="{class_name}">
+<div class="{class_name} hidden">
     {asset}
     <div class="item-content">
         <h1>{data["name"]}</h1>
