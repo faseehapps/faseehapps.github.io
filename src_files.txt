@@ -1,0 +1,9 @@
+trigonometric-visualizer
+apple-jump
+orbital-jump
+charmap
+file-encrypter
+dot-dash
+dot-smash
+static-site-generator
+example-programs
