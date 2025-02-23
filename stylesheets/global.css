@@ -3,6 +3,7 @@
     --primary: #3a3a3a;
     --shadow: #00000028;
     --panel: #eeeeee;
+    --success-green: #4b990c;
 }
 
 [data-theme="dark"] {
@@ -10,6 +11,7 @@
     --primary: #fff;
     --shadow: #ffffff36;
     --panel: #3d3d3d;
+    --success-green: #8bd64d;
 }
 
 body {

@@ -54,19 +54,28 @@ fetchReviews();
 
 // Post reviews
 document.getElementById('review-form').addEventListener('submit', async function(event) {
-    event.preventDefault(); // Prevent the default form submission
+    event.preventDefault(); // Prevent default form submission
 
     const formData = new FormData(this);
-    const response = await fetch('https://faseeh1080.pythonanywhere.com/submit-review', {
-        method: 'POST',
-        body: formData
-    });
+    
+    try {
+        const response = await fetch('https://faseeh1080.pythonanywhere.com/submit-review', {
+            method: 'POST',
+            body: formData
+        });
 
-    if (response.ok) {
-        let reviewFormDiv = document.getElementById('review-form-div');
-        reviewFormDiv.innerHTML = '<p>Thanks for submitting your review.</p>';
-        fetchReviews();
-    } else {
-        alert('Failed to submit the review.');
+        console.log(response.ok ? 'Review submitted successfully' : 'Failed to submit the review');
+
+        if (response.ok) fetchReviews();
+    } catch (error) {
+        console.error('Error submitting review:', error);
+    } finally {
+        // Show thanks message regardless of success or failure
+        const thanksDiv = document.createElement('div');
+        thanksDiv.className = 'review-thanks';
+        thanksDiv.innerHTML = '<div class="review-thanks-icon"></div><p>Thanks</p>';
+        reviewFormDiv = document.getElementById('review-form-div');
+        reviewFormDiv.innerHTML = '';
+        reviewFormDiv.appendChild(thanksDiv);
     }
 });

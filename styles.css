@@ -114,6 +114,7 @@
     --primary: #3a3a3a;
     --shadow: #00000028;
     --panel: #eeeeee;
+    --success-green: #4b990c;
 }
 
 [data-theme="dark"] {
@@ -121,6 +122,7 @@
     --primary: #fff;
     --shadow: #ffffff36;
     --panel: #3d3d3d;
+    --success-green: #8bd64d;
 }
 
 body {
@@ -276,6 +278,25 @@ h1, h2, h3, h4, p {
 .review-form textarea {
     height: 140px;
     resize: none;
+}
+
+.review-thanks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.review-thanks-icon {
+    width: 64px;
+    height: 64px;
+    background-color: var(--success-green);
+    -webkit-mask: url('https://faseehapps.github.io/assets/check-circle.svg') no-repeat center / contain;
+    mask: url('https://faseehapps.github.io/assets/check-circle.svg') no-repeat center / contain; /* For browsers which doesn't support -webkit-mask */
 }
 
 .review-list-container {

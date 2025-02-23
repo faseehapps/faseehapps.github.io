@@ -68,6 +68,25 @@
     resize: none;
 }
 
+.review-thanks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.review-thanks-icon {
+    width: 64px;
+    height: 64px;
+    background-color: var(--success-green);
+    -webkit-mask: url('https://faseehapps.github.io/assets/check-circle.svg') no-repeat center / contain;
+    mask: url('https://faseehapps.github.io/assets/check-circle.svg') no-repeat center / contain; /* For browsers which doesn't support -webkit-mask */
+}
+
 .review-list-container {
     display: flex;
     flex-direction: column;
