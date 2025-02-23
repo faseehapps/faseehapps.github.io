@@ -66,16 +66,17 @@ document.getElementById('review-form').addEventListener('submit', async function
 
         console.log(response.ok ? 'Review submitted successfully' : 'Failed to submit the review');
 
-        if (response.ok) fetchReviews();
+        if (response.ok) {
+            fetchReviews();
+            // Say thanks
+            const thanksDiv = document.createElement('div');
+            thanksDiv.className = 'review-thanks';
+            thanksDiv.innerHTML = '<div class="review-thanks-icon"></div><p>Thanks</p>';
+            const reviewFormDiv = document.getElementById('review-form-div');
+            reviewFormDiv.innerHTML = '';
+            reviewFormDiv.appendChild(thanksDiv);
+        }
     } catch (error) {
-        console.error('Error submitting review:', error);
-    } finally {
-        // Show thanks message regardless of success or failure
-        const thanksDiv = document.createElement('div');
-        thanksDiv.className = 'review-thanks';
-        thanksDiv.innerHTML = '<div class="review-thanks-icon"></div><p>Thanks</p>';
-        reviewFormDiv = document.getElementById('review-form-div');
-        reviewFormDiv.innerHTML = '';
-        reviewFormDiv.appendChild(thanksDiv);
+        alert('Error submitting review');
     }
 });
