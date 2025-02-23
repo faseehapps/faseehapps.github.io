@@ -1,10 +1,17 @@
 import os
 from functions import *
 
-def generator():
-    print("Generaing HTML...")
+def generator(logs: bool = True) -> None:
+    # To print messages
+    def log(message: str) -> None:
+        if logs:
+            print(message)
+
+    # Generate HTML
+    log("Generaing HTML...")
 
     content = ""
+    src_files = []
 
     with open("src_files.txt", 'r', encoding='utf-8') as file:
         src_files = file.read().split()
@@ -15,11 +22,12 @@ def generator():
     with open("index.html", 'w', encoding='utf-8') as html_file:
         html_file.write(HTML_TEMPLATE.replace("{content}", add_identation(content, 2)))
 
-    print("Merging CSS files into styles.css...")
+    # Merge CSS
+    log("Merging CSS files into styles.css...")
     with open("styles.css", 'w', encoding='utf-8') as css_file:
         css_file.write(merge_css_files("stylesheets"))
 
-    print("Process complete!")
+    log("Process complete!")
 
 # Start
 
@@ -28,7 +36,7 @@ with open('template.html', 'r', encoding='utf-8') as file:
 
 if input("Activate debug mode? (y = yes, anything else = no): ").strip().lower() == 'y':
     while True:
-        generator()
+        generator(logs=False)
         if input("Debug mode: Press Enter to refresh, 'e' to exit: ").strip().lower() == 'e':
             break
 else:
