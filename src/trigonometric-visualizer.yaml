@@ -3,7 +3,7 @@ name: "Trigonometric Visualizer"
 path_to_img: "https://faseehapps.github.io/assets/trigonometric-visualizer.png"
 
 descriptions:
-  - "Some math sumulations"
+  - "Some math simulations"
 
 links:
   - ["View GitHub Repo", "'https://github.com/faseeh1080/trigonometric-visualizer' target='_blank'"]
