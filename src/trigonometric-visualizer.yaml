@@ -6,6 +6,4 @@ descriptions:
   - "Some math sumulations"
 
 links:
-  - ["Download", "'https://faseehapps.github.io/repository-name/path/to/file.zip' download='newname.zip'"]
-  - ["View Source Code", "'https://path/to/source/code/website' target='_blank'"]
-  - ["More Info", "'https://path/to/website/'"]
+  - ["View Source Code on GitHub", "'https://github.com/faseeh1080/trigonometric-visualizer' target='_blank'"]
