@@ -6,6 +6,9 @@ def generator(logs: bool = True) -> None:
     def log(message: str) -> None:
         if logs:
             print(message)
+    
+    with open('template.html', 'r', encoding='utf-8') as file:
+        HTML_TEMPLATE = file.read() # Replace {content} substring with the actual content
 
     # Generate HTML
     log("Generaing HTML...")
@@ -30,9 +33,6 @@ def generator(logs: bool = True) -> None:
     log("Process complete!")
 
 # Start
-
-with open('template.html', 'r', encoding='utf-8') as file:
-    HTML_TEMPLATE = file.read() # Replace {content} substring with the actual content
 
 if input("Activate debug mode? (y = yes, anything else = no): ").strip().lower() == 'y':
     while True:

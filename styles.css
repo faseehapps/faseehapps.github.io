@@ -117,12 +117,14 @@
     --success-green: #4b990c;
 }
 
-[data-theme="dark"] {
-    --background: #333;
-    --primary: #fff;
-    --shadow: #ffffff36;
-    --panel: #3d3d3d;
-    --success-green: #8bd64d;
+@media (prefers-color-scheme: dark) {
+    :root {
+        --background: #333;
+        --primary: #fff;
+        --shadow: #ffffff36;
+        --panel: #3d3d3d;
+        --success-green: #8bd64d;
+    }
 }
 
 body {
