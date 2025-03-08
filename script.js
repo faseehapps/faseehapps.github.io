@@ -1,3 +1,10 @@
+function reviewDiv(authorName, reviewText) {
+    let review = document.createElement('div');
+    review.className = 'review';
+    review.innerHTML = `<p><strong>${authorName}</strong><br>${reviewText}</p>`;
+    return review;
+}
+
 // Fetch reviews
 async function fetchReviews() {
     let reviewList = document.getElementById('review-list');
@@ -8,19 +15,13 @@ async function fetchReviews() {
         reviewList.innerHTML = '';
 
         data.forEach(review => {
-            let div = document.createElement('div');
-            div.className = 'review';
-            div.innerHTML = `<p><strong>${review.name}</strong><br>${review.review}</p>`;
-            reviewList.appendChild(div);
+            reviewList.appendChild(reviewDiv(review.name, review.review));
         });
     } catch (error) {
         reviewList.innerHTML = '';
-        ['Failed to fetch reviews.', 'Failed to fetch reviews. Process aborted.'].forEach(message => {
-            let div = document.createElement('div');
-            div.className = 'review';
-            div.innerHTML = `<p><strong>Unavailable</strong><br>${message}</p>`;
-            reviewList.appendChild(div);
-        });
+        for (let i = 0; i < 10; i++) {
+            reviewList.appendChild(reviewDiv("Unavailable", "The server could not process your request at this time. Please try again later or access the page directly from the official website."));
+        }
     }
 }
 

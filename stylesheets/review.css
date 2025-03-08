@@ -32,7 +32,10 @@
 .review-form-div {
     display: flex;
     flex-direction: column;
+    position: sticky;
+    top: 90px;
     width: 100%;
+    height: fit-content;
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
