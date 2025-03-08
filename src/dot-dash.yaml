@@ -1,7 +1,5 @@
 name: "Dot Dash"
 
-path_to_vid: "https://faseehapps.github.io/assets/dot-dash.mp4"
-
 descriptions:
  - "Test your mouse controlling skills! Made with Python and Pygame"
 

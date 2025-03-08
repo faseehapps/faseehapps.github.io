@@ -1,6 +1,6 @@
-trigonometric-visualizer
 apple-jump
 orbital-jump
+trigonometric-visualizer
 charmap
 file-encrypter
 dot-dash
