@@ -12,11 +12,6 @@
 }
 
 .logo {
-    font-family: "Roboto", serif;
-    font-optical-sizing: auto;
-    font-weight: 900;
-    font-style: normal;
-    font-variation-settings: "wdth" 100;
     color: var(--primary);
     margin: 16px;
 }
@@ -56,16 +51,11 @@
 }
 
 .header-title {
-    font-family: "Roboto", serif;
-    font-size: 70px;
-    font-weight: 900;
+    font-size: 64px;
     text-align: center;
     margin: 5px;
 }
 
 .header-text {
-    font-family: "Roboto", serif;
-    font-size: 18px;
-    text-align: center;
     margin: 10px;
 }
