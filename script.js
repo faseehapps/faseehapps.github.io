@@ -22,7 +22,7 @@ async function fetchReviews() {
     } catch (error) {
         reviewList.innerHTML = '';
         for (let i = 0; i < 10; i++) {
-            reviewList.appendChild(reviewDiv("Unavailable", "The server could not process your request at this time. Please try again later or access the page directly from the official website."));
+            reviewList.appendChild(reviewDiv("Unavailable", "The server could not process your request at this time😢 Please try again later or access the page directly from the official website.\nIf this happens often, please consider submitting a suggestion or reporting it to me personally. It really boosts my motivation!"));
         }
     }
 }
