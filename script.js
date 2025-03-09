@@ -1,7 +1,9 @@
 function reviewDiv(authorName, reviewText) {
     let review = document.createElement('div');
     review.className = 'review';
-    review.innerHTML = `<p><strong>${authorName}</strong><br>${reviewText}</p>`;
+    let formattedReview = String(reviewText).replace(/</g, '&lt;');
+    formattedReview = formattedReview.split('\n').map(paragraph => `<p>${paragraph}</p>`).join('');
+    review.innerHTML = `<p><strong>${authorName}</strong></p>${formattedReview}`;
     return review;
 }
 
