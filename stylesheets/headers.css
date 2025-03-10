@@ -74,10 +74,27 @@
     box-sizing: border-box;
 }
 
+@keyframes bounce {
+    0% { transform: translateY(0); }
+    5% { transform: translateY(-10px); }
+    10% { transform: translateY(0); }
+    15% { transform: translateY(-10px); }
+    20% { transform: translateY(0px); }
+}
+
+@keyframes colorChange {
+    0% { color: var(--1); }
+    25% { color: var(--2); }
+    50% { color: var(--3); }
+    75% { color: var(--4); }
+    100% { color: var(--1); }
+}
+
 .header-title {
     font-size: 64px;
     text-align: center;
     margin: 5px;
+    animation: bounce 5s infinite, colorChange 4s infinite;
 }
 
 .header-text {
