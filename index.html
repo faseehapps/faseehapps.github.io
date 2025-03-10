@@ -136,13 +136,13 @@
             <div id='review-form-div' class="review-form-div">
                 <h2>Report a Bug or Suggest an Idea</h2>
                 <form id='review-form' class="review-form" action="/submit-review" method="post">
-                    <label for="name">Name:</label>
+                    <label for="name">Your Name:</label>
                     <input type="text" id="name" name="name" maxlength="25" required>
                     <br><br>
-                    <label for="review">Text:</label>
-                    <textarea id="review" name="review" maxlength="600" required></textarea>
+                    <label for="review">Description:</label>
+                    <textarea id="review" name="review" maxlength="500" placeholder="Describe the bug or suggestion" required></textarea>
                     <br><br>
-                    <button class="download-button" type="submit">Post</button>
+                    <button class="download-button" type="submit">Submit</button>
                 </form>
             </div>
                 
