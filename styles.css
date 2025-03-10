@@ -114,6 +114,7 @@
     --primary: #3a3a3a;
     --shadow: #00000028;
     --panel: #eeeeee;
+    --link: #2569b8;
     --success-green: #4b990c;
 }
 
@@ -123,8 +124,13 @@
         --primary: #fff;
         --shadow: #ffffff36;
         --panel: #3d3d3d;
+        --link: #51c3e6;
         --success-green: #8bd64d;
     }
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {
@@ -135,9 +141,6 @@ body {
     margin: 0;
     width: 100%;
     align-items: center;
-}
-
-h1, h2, h3, h4, p, button, label {
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
     font-weight: normal;
@@ -147,17 +150,35 @@ h1, h2, h3, h4, p, button, label {
     color: var(--primary);
 }
 
+button {
+    cursor: pointer;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+    letter-spacing: 2px;
+    line-height: 1.5;
+}
+
 .sticky-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: fixed;
     width: 100%;
+    padding: 0 10px 0 10px;
     border-bottom: 1px solid var(--primary);
     color: var(--on-primary);
     background-color: var(--background);
     top: 0;
     z-index: 10;
+    box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+    .sticky-header {
+        display: none;
+    }
 }
 
 .logo {
@@ -165,25 +186,41 @@ h1, h2, h3, h4, p, button, label {
     margin: 16px;
 }
 
-.theme-toggle-btn {
-    font-family: "Roboto", serif;
-    font-size: 18px;
-    color: var(--primary);
-    background-color: var(--background);
-    border: 1px solid var(--primary);
-    box-shadow: 0 0 0 var(--shadow);
-    border-radius: 999px;
-    padding: 8px 16px 8px 16px;
-    margin: 16px;
-    transition: color 0.3s ease ,background-color 0.3s ease, border 0.3s ease, box-shadow 0.3s ease;
+.navbar {
+    list-style: none;
+    padding: 0 20px 0 0;
+    display: flex;
+    gap: 18px;
+    box-sizing: border-box;
 }
 
-.theme-toggle-btn:hover {
+.navbar li {
+    transform: translateY(0px);
+    transition: transform 0.2s ease;
+}
+
+.navbar li:hover {
+    transform: translateY(-2px);
+}
+
+.navbar li a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 18px;
+    transition: color 0.2s ease;
+}
+
+.navbar li a:hover {
+    color: var(--link);
     cursor: pointer;
-    color: var(--background);
-    background-color: var(--primary);
-    border: 1px solid transparent;
-    box-shadow: 0 0 15px var(--shadow);
+}
+
+#downloads {
+    scroll-margin-top: 50px;
+}
+
+#suggestions {
+    scroll-margin-top: 50px;
 }
 
 .header {
