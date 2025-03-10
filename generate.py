@@ -1,6 +1,10 @@
 import os
 from functions import *
 
+from watchdog.observers import Observer
+from watchdog.events import FileSystemEventHandler
+import time
+
 def generator(logs: bool = True) -> None:
     # To print messages
     def log(message: str) -> None:
@@ -32,12 +36,38 @@ def generator(logs: bool = True) -> None:
 
     log("Process complete!")
 
+class OnFileChange(FileSystemEventHandler):
+    def on_modified(self, event):
+        if event.is_directory: # Ignore directory changes, only track file changes
+            return
+        
+        filename = os.path.basename(event.src_path)
+        if filename in ("index.html", "styles.css"): # Ignore generated files
+            return
+        
+        print("Refreshed.")
+        generator(logs=False)
+
 # Start
 
-if input("Activate debug mode? (y = yes, anything else = no): ").strip().lower() == 'y':
-    while True:
-        generator(logs=False)
-        if input("Debug mode: Press Enter to refresh, 'e' to exit: ").strip().lower() == 'e':
-            break
+if input("Activate debug mode? (y/N): ").strip().lower() in ('y', 'yes'):
+    print('Debug mode actiavted. Press Ctrl + C to exit.')
+    generator(logs=False) # Run generator initially
+
+    path_to_watch = "."
+    event_handler = OnFileChange()
+    observer = Observer()
+    observer.schedule(event_handler, path_to_watch, recursive=True)
+
+    observer.start()
+
+    try:
+        while True:
+            time.sleep(0.25)
+    except KeyboardInterrupt: # Ctrl + C
+        observer.stop()
+    
+    observer.join() # Wait for the observer thread to finish
+    print("Program stopped.")
 else:
     generator()
