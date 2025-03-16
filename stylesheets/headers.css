@@ -67,7 +67,8 @@
     width: 100%;
     height: 100vh;
     gap: 10px;
-    background-color: var(--panel);
+    background: rgb(199,234,235);
+    background: linear-gradient(16deg, rgba(199,234,235,1) 0%, rgba(251,251,251,1) 50%, rgba(199,234,235,1) 100%);
     margin: 0px;
     padding: 40px;
     box-sizing: border-box;
