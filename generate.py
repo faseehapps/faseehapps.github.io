@@ -45,8 +45,8 @@ class OnFileChange(FileSystemEventHandler):
         if filename in ("index.html", "styles.css"): # Ignore generated files
             return
         
-        print("Refreshed.")
         generator(logs=False)
+        print("Refreshed.")
 
 # Start
 
@@ -68,6 +68,6 @@ if input("Activate debug mode? (y/N): ").strip().lower() in ('y', 'yes'):
         observer.stop()
     
     observer.join() # Wait for the observer thread to finish
-    print("Program stopped.")
+    print("Program terminated.")
 else:
     generator()
