@@ -5,13 +5,13 @@
     --panel: #eeeeee;
     --link: #2569b8;
     --success-green: #4b990c;
-    --1: #ce1c1c;
-    --2: #d3d61c;
-    --3: #2bc6ec;
-    --4: #e02cc2;
+    --1: #f8c149;
+    --2: #f3ef19;
+    --3: #5bf1dd;
+    --4: #cf83ec;
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
     :root {
         --background: #333;
         --primary: #fff;
@@ -24,7 +24,7 @@
         --3: #43c5e6;
         --4: #c94bb4;
     }
-}
+} */
 
 html {
     scroll-behavior: smooth;

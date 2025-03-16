@@ -73,7 +73,7 @@
     box-sizing: border-box;
 }
   
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
     .header {
         grid-template-columns: 1fr;
     }
@@ -131,6 +131,7 @@
     font-size: 64px;
     text-align: center;
     margin: 5px;
+    text-shadow: 0 2px 4px black;
     animation: bounce 5s infinite, colorChange 4s infinite;
 }
 
