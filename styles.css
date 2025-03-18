@@ -231,14 +231,25 @@ button {
     scroll-margin-top: 50px;
 }
 
+
+.header-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background: rgb(199,234,235);
+    background: linear-gradient(16deg, rgba(199,234,235,1) 0%, rgba(251,251,251,1) 50%, rgba(199,234,235,1) 100%);
+}
+
 .header {
     display: grid;
     grid-template-columns: 1fr 1fr;
     width: 100%;
+    max-width: 1200px;
     height: 100vh;
     gap: 10px;
-    background: rgb(199,234,235);
-    background: linear-gradient(16deg, rgba(199,234,235,1) 0%, rgba(251,251,251,1) 50%, rgba(199,234,235,1) 100%);
     margin: 0px;
     padding: 40px;
     box-sizing: border-box;
