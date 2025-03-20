@@ -239,8 +239,8 @@ button {
     width: 100%;
     margin: 0;
     padding: 0;
-    background: rgb(199,234,235);
-    background: linear-gradient(16deg, rgba(199,234,235,1) 0%, rgba(251,251,251,1) 50%, rgba(199,234,235,1) 100%);
+    background: rgb(255,255,255);
+    background: radial-gradient(circle, rgba(255,255,255,0) 0%, rgba(199,234,234,1) 100%);
 }
 
 .header {
@@ -322,6 +322,16 @@ button {
 }
 
 .review-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.review-container {
     display: flex;
     flex-direction: column;
     width: 100%;
