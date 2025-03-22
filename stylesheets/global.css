@@ -11,23 +11,14 @@
     --4: #cf83ec;
 }
 
-/* @media (prefers-color-scheme: dark) {
-    :root {
-        --background: #333;
-        --primary: #fff;
-        --shadow: #ffffff36;
-        --panel: #3d3d3d;
-        --link: #51c3e6;
-        --success-green: #8bd64d;
-        --1: #d82e2e;
-        --2: #e9ec35;
-        --3: #43c5e6;
-        --4: #c94bb4;
-    }
-} */
-
 html {
     scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
 }
 
 body {
