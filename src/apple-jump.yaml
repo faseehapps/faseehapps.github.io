@@ -2,7 +2,7 @@ name: "Apple Jump"
 
 path_to_img: "https://faseehapps.github.io/assets/apple-jump.png"
 
-descriptions:
+description:
  - "A Unity game where you jump over apples to reach higher and higher"
 
 links:

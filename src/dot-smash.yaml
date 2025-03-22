@@ -1,6 +1,6 @@
 name: "Dot Smash"
 
-descriptions:
+description:
   - "A remake of <i>Dot Dash</i>. Made with C++ and SFML"
 
 links:

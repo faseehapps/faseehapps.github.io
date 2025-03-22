@@ -48,8 +48,8 @@ def index_content(source_files: list) -> str:
         index_content += f"<div class='item-content'>" # div item-content.
         index_content += f"<h1>{data["name"]}</h1>"
 
-        if "descriptions" in data and data["descriptions"]:
-            for description in data["descriptions"]:
+        if "description" in data and data["description"]:
+            for description in data["description"]:
                 index_content += f"<p>{description}</p>"
 
         index_content += "<div class='download-buttons-container'>" # div download-buttons-container

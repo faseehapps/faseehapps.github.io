@@ -18,8 +18,8 @@ def download_item(path_to_src: str) -> str:
         class_name = "item-without-img"
 
     description = ""
-    if "descriptions" in data and data["descriptions"]:
-        for paragraph in data["descriptions"]:
+    if "description" in data and data["description"]:
+        for paragraph in data["description"]:
             description += f"""<p>{paragraph}</p>"""
 
     download_btns = []

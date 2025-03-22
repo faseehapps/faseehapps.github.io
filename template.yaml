@@ -3,7 +3,7 @@ name: "Item Name"
 path_to_vid: "https://faseehapps.github.io/assets/video.mp4"
 path_to_img: "https://faseehapps.github.io/assets/image.png"
 
-descriptions:
+description:
   - "This is the first paragraph."
   - "This is the second paragraph."
 
