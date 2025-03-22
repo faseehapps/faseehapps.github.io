@@ -90,9 +90,7 @@
 
 .download-button:hover,
 .download-button:focus {
-    border-color: var(--primary);
     box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
-    color: rgba(0, 0, 0, 0.65);
 }
 
 .download-button:hover {
