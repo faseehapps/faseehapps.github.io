@@ -44,7 +44,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     width: 100%;
     padding: 40px;
     margin: auto;
@@ -56,6 +55,19 @@
 .item-without-img p {
     margin: 0 0 8px 0;
     text-align: center;
+}
+
+@media (max-width: 768px) {
+    .item-with-img {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .item-with-img h1, 
+    .item-with-img p, 
+    .item-without-img h1, 
+    .item-without-img p {
+        text-align: left;
+    }
 }
 
 .download-buttons-container {
