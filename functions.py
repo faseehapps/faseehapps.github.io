@@ -24,7 +24,7 @@ def download_item(path_to_src: str) -> str:
 
     download_btns = []
     for download_link in data["links"]:
-        download_btns.append(f"""<a href={download_link[1]}><button class='download-button'>{download_link[0]}</button></a>""")
+        download_btns.append(f"""<a href={download_link[1]}><button class='download-button' role="button">{download_link[0]}</button></a>""")
 
     return f"""
 <div class="{class_name}">
