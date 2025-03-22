@@ -68,6 +68,6 @@ if input("Activate debug mode? (y/N): ").strip().lower() in ('y', 'yes'):
         observer.stop()
     
     observer.join() # Wait for the observer thread to finish
-    print("Program terminated.")
+    print("Program stopped.")
 else:
     generator()
