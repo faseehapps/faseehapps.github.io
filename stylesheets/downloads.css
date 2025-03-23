@@ -18,7 +18,7 @@
     grid-template-columns: repeat(2, 1fr);
     width: 100%;
     gap: 0px;
-    border-bottom: 1px solid var(--primary);
+    border-bottom: 1px solid var(--text);
     padding: 24px;
 }
 
@@ -31,7 +31,7 @@
     display: flex;
     width: 100%;
     padding: 24px;
-    border-bottom: 1px solid var(--primary);
+    border-bottom: 1px solid var(--text);
 }
 
 .item-content {
@@ -63,7 +63,7 @@
 .download-button {
     align-items: center;
     background-color: #FFFFFF;
-    border: 1px solid var(--primary);
+    border: 1px solid var(--text);
     border-radius: .25rem;
     box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
     color: rgba(0, 0, 0, 0.85);

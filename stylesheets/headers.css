@@ -5,7 +5,7 @@
     position: fixed;
     width: 100%;
     padding: 0 10px 0 10px;
-    border-bottom: 1px solid var(--primary);
+    border-bottom: 1px solid var(--text);
     color: var(--on-primary);
     background-color: var(--background);
     top: 0;
@@ -19,7 +19,7 @@
 }
 
 .logo {
-    color: var(--primary);
+    color: var(--text);
     margin: 16px;
 }
 

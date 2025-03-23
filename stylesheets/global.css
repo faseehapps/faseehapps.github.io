@@ -1,8 +1,6 @@
 :root {
     --background: #ffffff;
-    --primary: #3a3a3a;
-    --shadow: #00000028;
-    --panel: #eeeeee;
+    --text: #3a3a3a;
     --link: #2569b8;
     --success-green: #4b990c;
 }
@@ -31,7 +29,7 @@ body {
     font-style: normal;
     letter-spacing: 2px;
     line-height: 1.5;
-    color: var(--primary);
+    color: var(--text);
 }
 
 button {
