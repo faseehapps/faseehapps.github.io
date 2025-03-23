@@ -72,6 +72,7 @@
 .review-form textarea {
     height: 140px;
     resize: none;
+    font-family: inherit;
 }
 
 .review-thanks {
