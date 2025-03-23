@@ -47,7 +47,9 @@
     .review-form-div {
         position: static;
     }
+}
 
+@media (max-width: 450px) {
     .review-container {
         padding-left: 18px;
         padding-right: 18px;
