@@ -47,6 +47,11 @@
     .review-form-div {
         position: static;
     }
+
+    .review-container {
+        padding-left: 18px;
+        padding-right: 18px;
+    }
 }
 
 .review-form {

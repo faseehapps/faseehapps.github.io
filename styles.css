@@ -90,6 +90,12 @@
         grid-template-columns: repeat(1, 1fr);
     }
 
+    .item-with-img,
+    .item-without-img {
+        padding-left: 4px;
+        padding-right: 4px;
+    }
+
     .item-with-img h1, 
     .item-with-img p, 
     .item-without-img h1, 
@@ -287,6 +293,7 @@ button {
 .header-text {
     margin: 10px;
     color: white;
+    text-align: center;
     text-shadow: 0 2px 4px black;
 }
 
@@ -362,6 +369,11 @@ button {
 
     .review-form-div {
         position: static;
+    }
+
+    .review-container {
+        padding-left: 18px;
+        padding-right: 18px;
     }
 }
 

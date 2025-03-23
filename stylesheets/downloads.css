@@ -90,6 +90,12 @@
         grid-template-columns: repeat(1, 1fr);
     }
 
+    .item-with-img,
+    .item-without-img {
+        padding-left: 4px;
+        padding-right: 4px;
+    }
+
     .item-with-img h1, 
     .item-with-img p, 
     .item-without-img h1, 

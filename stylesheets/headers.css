@@ -120,6 +120,7 @@
 .header-text {
     margin: 10px;
     color: white;
+    text-align: center;
     text-shadow: 0 2px 4px black;
 }
 
