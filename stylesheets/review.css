@@ -2,7 +2,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-image: url('https://faseehapps.github.io/assets/clouds.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
     width: 100%;
+    color: white;
     margin: 0;
     padding: 0;
 }
@@ -15,7 +20,6 @@
     margin: 0 0 20px 0;
     padding: 40px;
     padding-top: 60px;
-    border-top: 1px solid var(--primary);
 }
 
 .review-form-list-div { 
@@ -57,7 +61,6 @@
     display: block;
     font-weight: bold;
     margin-bottom: 5px;
-    color: var(--primary);
 }
     
 .review-form input, .review-form textarea {
@@ -65,8 +68,7 @@
     padding: 8px;
     margin-bottom: 10px;
     font-size: 16px;
-    border: 1px solid var(--primary);
-    color: var(--primary);
+    border: 1px solid white;
     background-color: transparent;
 }
 
@@ -132,4 +134,40 @@
     text-align: left;
     margin: 6px;
     padding: 0px;
+}
+
+.submit-button {
+    align-items: center;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: .25rem;
+    cursor: pointer;
+    display: inline-flex;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    justify-content: center;
+    line-height: 1.25;
+    margin: 0;
+    min-height: 3rem;
+    padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+    position: relative;
+    text-decoration: none;
+    transition: all 0.2s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: baseline;
+    width: auto;
+}
+
+.submit-button:hover,
+.submit-button:focus {
+    color: black;
+    background-color: white;
+}
+
+.submit-button:active {
+    background-color: #f0f0f0;
+    border-color: #f0f0f0;
 }
