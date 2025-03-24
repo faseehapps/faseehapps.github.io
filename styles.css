@@ -1,3 +1,47 @@
+:root {
+    --background: #ffffff;
+    --text: #3a3a3a;
+    --link: #2569b8;
+    --success-green: #4b990c;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--background);
+    color: var(--text-color);
+    margin: 0;
+    width: 100%;
+    align-items: center;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+    letter-spacing: 2px;
+    line-height: 1.5;
+    color: var(--text);
+}
+
+button {
+    cursor: pointer;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+    letter-spacing: 2px;
+    line-height: 1.5;
+}
+
 .downloads-section {
     display: flex;
     flex-direction: column;
@@ -85,36 +129,6 @@
     border-color: transparent;
 }
 
-@media (max-width: 768px) {
-    .item-with-img {
-        grid-template-columns: repeat(1, 1fr);
-    }
-
-    .item-with-img h1, 
-    .item-with-img p, 
-    .item-without-img h1, 
-    .item-without-img p {
-        text-align: left;
-    }
-
-    .item-content {
-        align-items: flex-start;
-        padding: 40px 0;
-    }
-
-    .download-buttons-container {
-        justify-content: left;
-    }
-}
-
-@media (max-width: 450px) {
-    .item-with-img,
-    .item-without-img {
-        padding-left: 4px;
-        padding-right: 4px;
-    }
-}
-
 .footer {
     display: flex;
     flex-direction: column;
@@ -129,50 +143,6 @@
     text-align: center;
 }
 
-:root {
-    --background: #ffffff;
-    --text: #3a3a3a;
-    --link: #2569b8;
-    --success-green: #4b990c;
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-}
-
-body {
-    display: flex;
-    flex-direction: column;
-    background-color: var(--background);
-    color: var(--text-color);
-    margin: 0;
-    width: 100%;
-    align-items: center;
-    font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: normal;
-    font-style: normal;
-    letter-spacing: 2px;
-    line-height: 1.5;
-    color: var(--text);
-}
-
-button {
-    cursor: pointer;
-    font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: normal;
-    font-style: normal;
-    letter-spacing: 2px;
-    line-height: 1.5;
-}
-
 .sticky-header {
     display: flex;
     justify-content: space-between;
@@ -185,12 +155,6 @@ button {
     background-color: var(--background);
     top: 0;
     z-index: 10;
-}
-
-@media (max-width: 790px) {
-    .sticky-header {
-        display: none;
-    }
 }
 
 .logo {
@@ -363,23 +327,6 @@ button {
     padding: 0px;
 }
 
-@media (max-width: 768px) {
-    .review-form-list-div {
-        grid-template-columns: 1fr;
-    }
-
-    .review-form-div {
-        position: static;
-    }
-}
-
-@media (max-width: 450px) {
-    .review-container {
-        padding-left: 18px;
-        padding-right: 18px;
-    }
-}
-
 .review-form {
     width: 100%;
     padding: 0px;
@@ -418,17 +365,6 @@ button {
     opacity: 0;
     transform: translateY(10px);
     animation: fadeIn 0.5s ease-in-out forwards;
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(10px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
 }
 
 .review-thanks-icon {
@@ -488,4 +424,71 @@ button {
     color: white;
     background-color: var(--link);
     border-color: transparent;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 790px) {
+    .sticky-header {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .item-with-img {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .item-with-img h1, 
+    .item-with-img p, 
+    .item-without-img h1, 
+    .item-without-img p {
+        text-align: left;
+    }
+
+    .item-content {
+        align-items: flex-start;
+        padding: 40px 0;
+    }
+
+    .download-buttons-container {
+        justify-content: left;
+    }
+
+    .review-form-list-div {
+        grid-template-columns: 1fr;
+    }
+
+    .review-form-div {
+        position: static;
+    }
+}
+
+@media (max-width: 525px) {
+    .review-container {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+}
+
+@media (max-width: 450px) {
+    .review-container {
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+
+    .item-with-img,
+    .item-without-img {
+        padding-left: 4px;
+        padding-right: 4px;
+    }
 }
