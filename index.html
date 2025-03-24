@@ -148,15 +148,14 @@
             <div class="review-form-list-div">
                 <div id='review-form-div' class="review-form-div">
                     <h2>Report a Bug or Suggest an Idea 💡</h2>
-                    <form id='review-form' class="review-form" action="/submit-review" method="post">
+                    <form id='review-form' class="review-form">
                         <label for="name">Your Name:</label>
-                        <input type="text" id="name" name="name" maxlength="25" required>
+                        <input type="text" id="name" name="name">
                         <br><br>
                         <label for="review">Description:</label>
-                        <textarea id="review" name="review" maxlength="500" placeholder="Describe the bug or suggestion" required></textarea>
-                        <br><br>
-                        <button class="submit-button">Submit</button>
+                        <textarea id="review" name="review" placeholder="Describe the bug or suggestion"></textarea>
                     </form>
+                    <button class="submit-button" id="submit-btn">Submit</button>
                 </div>
                     
                 <div class="review-list-container">

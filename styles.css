@@ -426,6 +426,12 @@ button {
     border-color: transparent;
 }
 
+.submit-button:disabled {
+    color: white;
+    background-color: rgb(163, 163, 163);
+    border-color: transparent;
+}
+
 @keyframes fadeIn {
     from {
         opacity: 0;

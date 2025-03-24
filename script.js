@@ -30,21 +30,57 @@ async function fetchReviews() {
 fetchReviews();
 
 
-// Post reviews
-document.getElementById('review-form').addEventListener('submit', async function(event) {
-    event.preventDefault(); // Prevent default form submission
+function validateForm(name, review) {
+    if (!name.trim()) {
+        alert('Name cannot be empty.');
+        return false;
+    }
 
-    const formData = new FormData(this);
-    
+    if (name.length > 100) {
+        alert('Name is too long. Please limit it to 100 characters.');
+        return false;
+    }
+
+    if (!review.trim()) {  // Explicitly check if suggestion is empty or just spaces
+        alert('Suggestion cannot be empty.');
+        return false;
+    }
+
+    if (review.length < 10) {
+        alert('Suggestion is too short. Please provide at least 10 characters.');
+        return false;
+    }
+
+    if (review.length > 700) {
+        alert('Suggestion is too long. Please limit it to 700 characters.');
+        return false;
+    }
+
+    return true; 
+}
+
+document.getElementById('submit-btn').addEventListener('click', async function() {
+    this.disabled = true;
+
+    const name = document.getElementById('name').value;
+    const review = document.getElementById('review').value;
+
+    if (!validateForm(name, review)) {
+        this.disabled = false;
+        return;
+    }
+
+    // If validation passes, submit the form
+    const formData = new FormData(document.getElementById('review-form'));
+
     try {
         const response = await fetch('https://faseeh1080.pythonanywhere.com/submit-review', {
             method: 'POST',
             body: formData
         });
 
-        console.log(response.ok ? 'Review submitted successfully' : 'Failed to submit the review');
-
         if (response.ok) {
+            console.log('Review submitted successfully');
             fetchReviews();
             // Say thanks
             const thanksDiv = document.createElement('div');
@@ -53,8 +89,14 @@ document.getElementById('review-form').addEventListener('submit', async function
             const reviewFormDiv = document.getElementById('review-form-div');
             reviewFormDiv.innerHTML = '';
             reviewFormDiv.appendChild(thanksDiv);
+        } else {
+            console.log('Failed to submit the review');
+            this.disabled = false;
         }
+
     } catch (error) {
+        this.disabled = false;
         alert('Error submitting review');
     }
 });
+
