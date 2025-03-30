@@ -114,6 +114,7 @@
 }
 
 .submit-button {
+    position: relative;
     align-items: center;
     background-color: transparent;
     border: 1px solid var(--text);
@@ -139,7 +140,7 @@
 }
 
 .submit-button:disabled {
-    color: white;
+    color: transparent;
     cursor: not-allowed;
     background-color: rgb(163, 163, 163);
     border-color: transparent;
