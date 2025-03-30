@@ -59,6 +59,15 @@ function validateForm(name, review) {
     return true; 
 }
 
+function sayThanks() {
+    const thanksDiv = document.createElement('div');
+    thanksDiv.className = 'review-thanks';
+    thanksDiv.innerHTML = '<div class="review-thanks-icon"></div><p>Thanks</p>';
+    const reviewFormDiv = document.getElementById('review-form-div');
+    reviewFormDiv.innerHTML = '';
+    reviewFormDiv.appendChild(thanksDiv);
+}
+
 document.getElementById('submit-btn').addEventListener('click', async function() {
     this.disabled = true;
 
@@ -82,13 +91,7 @@ document.getElementById('submit-btn').addEventListener('click', async function()
         if (response.ok) {
             console.log('Review submitted successfully');
             fetchReviews();
-            // Say thanks
-            const thanksDiv = document.createElement('div');
-            thanksDiv.className = 'review-thanks';
-            thanksDiv.innerHTML = '<div class="review-thanks-icon"></div><p>Thanks</p>';
-            const reviewFormDiv = document.getElementById('review-form-div');
-            reviewFormDiv.innerHTML = '';
-            reviewFormDiv.appendChild(thanksDiv);
+            sayThanks();
         } else {
             console.log('Failed to submit the review');
             this.disabled = false;
