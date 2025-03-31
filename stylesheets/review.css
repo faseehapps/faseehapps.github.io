@@ -141,7 +141,7 @@
 
 .submit-button:disabled {
     color: transparent;
-    cursor: not-allowed;
+    cursor: default;
     background-color: rgb(163, 163, 163);
     border-color: transparent;
 }
