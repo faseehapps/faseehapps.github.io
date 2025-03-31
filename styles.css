@@ -67,8 +67,12 @@ button {
 }
 
 .item-img {
-    width: 100%;
+    max-width: 100%;
+    max-height: 50vh;
+    width: auto;
     height: auto;
+    margin: auto;
+    object-fit: contain;
 }
 
 .item-without-img {
