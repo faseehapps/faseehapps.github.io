@@ -9,6 +9,10 @@
         grid-template-columns: repeat(1, 1fr);
     }
 
+    .item-img {
+        max-height: 68vh;
+    }
+
     .item-with-img h1, 
     .item-with-img p, 
     .item-without-img h1, 
