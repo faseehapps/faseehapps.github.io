@@ -28,17 +28,19 @@ async function fetchReviews() {
         data.forEach(review => {
             reviewList.appendChild(reviewDiv(review.name, review.review));
         });
+        
+        try {
+            document.getElementById('submit-btn').disabled = false;
+        } catch (error) {}
     } catch (error) {
-        document.getElementById('submit-btn').disabled = true;
-
         reviewList.innerHTML = '';
         for (let i = 0; i < 10; i++) {
-            reviewList.appendChild(reviewDiv("Unavailable", "The server could not process your request at this time😢 Please try again later or access the page directly from the official website.\nIf this happens often, please consider submitting a suggestion or reporting it to me personally. It really boosts my motivation!"));
+            reviewList.appendChild(reviewDiv("Unavailable", "The server could not process your request at this time😢 Please try again later or access the page directly from the official website. If this happens often, please consider submitting a suggestion or reporting it to me personally. It really boosts my motivation!"));
         }
     }
 }
 
-fetchReviews();
+fetchReviews(); // Also enables "submit-button" if present.
 
 
 function validateForm(name, review) {
