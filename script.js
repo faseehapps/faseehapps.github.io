@@ -1,3 +1,12 @@
+window.addEventListener('scroll', function() {
+    var div = document.getElementById('sticky-header');
+    if (window.scrollY > 0) {
+        div.classList.add('show-sticky-header');
+    } else {
+        div.classList.remove('show-sticky-header');
+    }
+});
+
 function reviewDiv(authorName, reviewText) {
     let review = document.createElement('div');
     review.className = 'review';

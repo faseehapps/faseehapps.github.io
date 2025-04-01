@@ -3,13 +3,21 @@
     justify-content: space-between;
     align-items: center;
     position: fixed;
+    opacity: 0;
     width: 100%;
     padding: 0 10px 0 10px;
     border-bottom: 1px solid var(--text);
     color: var(--on-primary);
     background-color: var(--background);
+    transform: translateY(-10px);
     top: 0;
     z-index: 10;
+    transition: all 0.2s ease;
+}
+
+.show-sticky-header {
+    transform: translateY(0);
+    opacity: 1;
 }
 
 .logo {
