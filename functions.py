@@ -9,11 +9,9 @@ def download_item(path_to_src: str) -> str:
     with open(path_to_src, 'r') as file:
         data = yaml.safe_load(file)
     
-    asset = "<!-- No Asset -->" # An asset might be a video or an image.
-    if path := data.get("path_to_vid"):
-        class_name, asset = "item-with-img", f"<video class='item-img' autoplay muted loop playsinline><source src='{path}' type='video/mp4'>Your browser does not support the video tag.</video>"
-    elif path := data.get("path_to_img"):
-        class_name, asset = "item-with-img", f"<img src='{path}' class='item-img'>"
+    img = "<!-- No Image -->"
+    if path := data.get("path_to_img"):
+        class_name, img = "item-with-img", f"<img src='{path}' class='item-img'>"
     else:
         class_name = "item-without-img"
 
@@ -28,7 +26,7 @@ def download_item(path_to_src: str) -> str:
 
     return f"""
 <div class="{class_name}">
-    {asset}
+    {img}
     <div class="item-content">
         <h1>{data["name"]}</h1>
         {description}
