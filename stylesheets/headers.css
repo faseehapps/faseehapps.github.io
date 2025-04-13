@@ -119,6 +119,7 @@
 
 .header-title {
     color: white;
+    text-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     font-size: 64px;
     text-align: center;
     margin: 5px;
@@ -129,6 +130,7 @@
     margin: 10px;
     color: white;
     text-align: center;
+    text-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .github-btn {
