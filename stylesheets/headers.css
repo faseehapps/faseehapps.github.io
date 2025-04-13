@@ -118,7 +118,7 @@
 }
 
 .header-title {
-    color: var(--text);
+    color: white;
     font-size: 64px;
     text-align: center;
     margin: 5px;
@@ -127,7 +127,7 @@
 
 .header-text {
     margin: 10px;
-    color: var(--text);
+    color: white;
     text-align: center;
 }
 
