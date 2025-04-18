@@ -11,7 +11,7 @@ def download_item(path_to_src: str) -> str:
     
     img = "<!-- No Image -->"
     if path := data.get("path_to_img"):
-        class_name, img = "item-with-img", f"<img src='{path}' class='item-img' loading='lazy'>"
+        class_name, img = "item-with-img", f"<div class='item-img-container'><div class='item-img'><img src='{path}' loading='lazy'></div></div>"
     else:
         class_name = "item-without-img"
 

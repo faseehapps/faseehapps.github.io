@@ -11,6 +11,11 @@
 
     .item-img {
         max-height: 68vh;
+        width: auto;
+    }
+
+    .item-img-container {
+        padding: 10px;
     }
 
     .item-with-img h1, 
