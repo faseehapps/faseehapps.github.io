@@ -3,7 +3,7 @@ name: "Character Map"
 path_to_img: "https://faseehapps.github.io/assets/charmap.png"
 
 description:
-  - "My version"
+  - 'My version. It has an "Always on Top" toggle!'
 
 links:
   - [
