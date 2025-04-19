@@ -1,0 +1,10 @@
+name: "Flask User Registration App"
+
+description:
+  - "A Flask web app example which uses MySQL as DMS"
+
+links:
+  - [
+      "View on GitHub",
+      "'https://github.com/faseeh1080/flask-user-registration' target='_blank'",
+    ]
