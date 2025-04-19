@@ -1,5 +1,7 @@
 name: "Trigonometric Visualizer"
 
+path_to_img: "https://faseehapps.github.io/assets/trig-visualizer.png"
+
 description:
   - "Some math simulations"
 
