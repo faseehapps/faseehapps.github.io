@@ -1,5 +1,7 @@
 name: "Example Programs"
 
+path_to_img: "https://faseehapps.github.io/assets/programming-language-keys.jpg"
+
 description:
  - "Tutorials for languages like Python, C++, C#, and JavaScript; libraries like SFML, Pygame, and Tkinter; a variety of programming concepts such as linked lists and the singleton pattern; and solutions to some of the most common programming problems in various languages."
 
