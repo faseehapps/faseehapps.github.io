@@ -9,7 +9,7 @@
     gap: 0px;
 }
 
-.downloads-section > :last-child {
+.downloads-section> :last-child {
     border-bottom: none;
 }
 
@@ -29,10 +29,11 @@
     align-items: center;
 }
 
-.item-img { 
+.item-img {
     width: 100%;
     aspect-ratio: 1 / 1;
     padding: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.096);
     border-radius: 12px;
     box-shadow: 2px 2px 2px #00000038;
     overflow: hidden;
@@ -60,9 +61,9 @@
     margin: auto;
 }
 
-.item-with-img h1, 
-.item-with-img p, 
-.item-without-img h1, 
+.item-with-img h1,
+.item-with-img p,
+.item-without-img h1,
 .item-without-img p {
     margin: 0 0 8px 0;
     text-align: center;
