@@ -1,7 +1,10 @@
 name: "Dot Dash"
 
 description:
- - "Test your mouse controlling skills! Made with Python and Pygame"
+  - "Test your mouse controlling skills! Made with Python and Pygame"
 
 links:
-  - ["Download for Windows", "'https://faseehapps.github.io/dot-dash/v1.0/dot_dash.zip' download"]
+  - [
+      "Download for Windows",
+      "'https://faseehapps.github.io/dot-dash/v1.0/dot_dash.zip' download",
+    ]

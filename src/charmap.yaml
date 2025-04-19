@@ -4,5 +4,11 @@ description:
   - "My version"
 
 links:
-  - ["Download for Windows", "'https://faseehapps.github.io/charmap/faseehs-charmap.zip' download"]
-  - ["View Source Code", "'https://github.com/faseehapps/source-codes/blob/main/charmap/main.py' target='_blank'"]
+  - [
+      "Download for Windows",
+      "'https://faseehapps.github.io/charmap/faseehs-charmap.zip' download",
+    ]
+  - [
+      "View Source Code",
+      "'https://github.com/faseehapps/source-codes/blob/main/charmap/main.py' target='_blank'",
+    ]

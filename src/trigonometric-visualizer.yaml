@@ -4,4 +4,7 @@ description:
   - "Some math simulations"
 
 links:
-  - ["View GitHub Repo", "'https://github.com/faseeh1080/trigonometric-visualizer' target='_blank'"]
+  - [
+      "View GitHub Repo",
+      "'https://github.com/faseeh1080/trigonometric-visualizer' target='_blank'",
+    ]

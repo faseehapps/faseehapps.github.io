@@ -4,4 +4,7 @@ description:
   - "A remake of <i>Dot Dash</i>. Made with C++ and SFML"
 
 links:
-  - ["Download for Windows", "'https://faseehapps.github.io/dot-smash/win64.zip' download='dot-smash.zip'"]
+  - [
+      "Download for Windows",
+      "'https://faseehapps.github.io/dot-smash/win64.zip' download='dot-smash.zip'",
+    ]

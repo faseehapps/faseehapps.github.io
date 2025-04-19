@@ -2,8 +2,8 @@ apple-jump
 orbital-jump
 trigonometric-visualizer
 charmap
-file-encrypter
 dot-dash
 dot-smash
+file-encrypter
 static-site-generator
 example-programs
