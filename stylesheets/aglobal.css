@@ -1,43 +1,43 @@
 :root {
-    --background: #ffffff;
-    --text: #3a3a3a;
-    --link: #2569b8;
-    --success-green: #4b990c;
+  --background: #ffffff;
+  --text: #3a3a3a;
+  --link: #2569b8;
+  --success-green: #4b990c;
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    display: flex;
-    flex-direction: column;
-    background-color: var(--background);
-    color: var(--text-color);
-    margin: 0;
-    width: 100%;
-    align-items: center;
-    font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: normal;
-    font-style: normal;
-    letter-spacing: 2px;
-    line-height: 1.5;
-    color: var(--text);
+  display: flex;
+  flex-direction: column;
+  background-color: var(--background);
+  color: var(--text-color);
+  margin: 0;
+  width: 100%;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+  letter-spacing: 2px;
+  line-height: 1.5;
+  color: var(--text);
 }
 
 button {
-    cursor: pointer;
-    font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: normal;
-    font-style: normal;
-    letter-spacing: 2px;
-    line-height: 1.5;
+  cursor: pointer;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+  letter-spacing: 2px;
+  line-height: 1.5;
 }
