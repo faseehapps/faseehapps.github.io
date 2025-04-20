@@ -10,12 +10,11 @@ window.addEventListener("scroll", function () {
 function reviewDiv(authorName, reviewText) {
   let review = document.createElement("div");
   review.className = "review";
-  let formattedReview = String(reviewText).replace(/</g, "&lt;");
-  formattedReview = formattedReview
-    .split("\n")
-    .map((paragraph) => `<p>${paragraph}</p>`)
-    .join("");
-  review.innerHTML = `<p><b>${authorName}</b> :</p>${formattedReview}`;
+  let formattedReview = String(reviewText)
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/\n/g, "<br>");
+  review.innerHTML = `<p><b>${authorName}</b> :</p><p>${formattedReview}</p>`;
   return review;
 }
 
