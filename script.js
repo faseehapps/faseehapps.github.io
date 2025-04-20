@@ -14,7 +14,7 @@ function reviewDiv(authorName, reviewText) {
     .replace(/</g, "&lt;")
     .replace(/>/g, "&gt;")
     .replace(/\n/g, "<br>");
-  review.innerHTML = `<p><b>${authorName}</b> :</p><p>${formattedReview}</p>`;
+  review.innerHTML = `<p><b>${authorName}</b>:</p><p>${formattedReview}</p>`;
   return review;
 }
 
