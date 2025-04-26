@@ -8,13 +8,13 @@ description:
 links:
   - [
       "Download for Windows",
-      "'https://faseehapps.github.io/file-encrypter/v2.0/file_encrypter.zip' download",
+      "'https://github.com/faseeh1080/file-encrypter/releases/download/v1.0/file-encrypter-v1.0-win64.zip' download",
     ]
   - [
-      "Download for Linux (Debian)",
-      "'https://faseehapps.github.io/file-encrypter/v1.0/file_encrypter_deb.zip' download",
+      "Download for Ubuntu",
+      "'https://github.com/faseeh1080/file-encrypter/releases/download/v1.0/file-encrypter-ubuntu-amd64.zip' download",
     ]
   - [
-      "View Source Code",
-      "'https://github.com/faseehapps/source-codes/tree/main/file-encrypter' target='_blank'",
+      "View on GitHub",
+      "'https://github.com/faseeh1080/file-encrypter' target='_blank'",
     ]
