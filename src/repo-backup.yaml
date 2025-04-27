@@ -1,0 +1,10 @@
+name: "Repo Backup"
+
+description:
+  - "A Python-based command-line tool for backing up your GitHub repositories"
+
+links:
+  - [
+      "View on GitHub",
+      "'https://github.com/faseeh1080/repo-backup' target='_blank'",
+    ]
