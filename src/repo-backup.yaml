@@ -8,3 +8,7 @@ links:
       "View on GitHub",
       "'https://github.com/faseeh1080/repo-backup' target='_blank'",
     ]
+  - [
+      "Download for Windows",
+      "'https://github.com/faseeh1080/repo-backup/releases/download/v3.0.0/repo_backup-win64.zip' download",
+    ]
