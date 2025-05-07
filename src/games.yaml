@@ -1,0 +1,9 @@
+name: "Games"
+
+path_to_img: "https://faseehapps.github.io/assets/dodge_the_creeps.png"
+
+description:
+  - "Games are published at Itch.io"
+
+links:
+  - ["Itch.io", "'https://faseehgames.itch.io/' target='_blank'"]

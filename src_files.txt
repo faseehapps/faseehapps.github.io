@@ -1,11 +1,10 @@
-apple-jump
-orbital-jump
+games
+file-encrypter
 repo-backup
 trigonometric-visualizer
 charmap
 dot-dash
 dot-smash
-file-encrypter
 flask-user-registration-app
 static-site-generator
 example-programs
